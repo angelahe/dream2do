@@ -17,7 +17,6 @@ class FlashcardDeck extends React.Component {
 
         return (
             <div className='flashcardWrapper'>
-                <h1>This is the FlashCard Deck app</h1>
                 <StatusBar />
                 <PlayArea />
                 <NavBar />

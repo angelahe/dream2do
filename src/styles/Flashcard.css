@@ -8,3 +8,37 @@
     height:67px;
     background:#666;
 }
+
+.playArea {
+    height: 555px;
+}
+
+.playCard {
+    width: 395px;
+    height: 545px;
+    background-color: honeydew;
+}
+
+.cardImg {
+    height: 197px;
+    width: 303px;
+    background-color: #61dafb;
+
+}
+
+.cardText {
+    height: 80px;
+    font-size: 30px;
+}
+
+.audioBtn {
+    height: 48px;
+    width: 48px;
+    background-color: #61dafb;
+}
+
+.navBtn {
+    height: 48px;
+    width: 48px;
+    background-color: #61dafb;
+}
