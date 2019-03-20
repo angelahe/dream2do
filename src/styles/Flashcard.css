@@ -1,0 +1,10 @@
+.flashcardWrapper{
+    width:422px;
+    margin:auto;
+    background:#ccc;
+}
+
+.navBar, .statusBar{
+    height:67px;
+    background:#666;
+}
