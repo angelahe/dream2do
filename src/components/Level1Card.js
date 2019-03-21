@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import Sound from 'react-sound'
 
 const cardDeck = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let cardNumber = 0;
@@ -21,12 +22,23 @@ function handleNextClick() {
   console.log(cardNumber);
 }
 
+function playAudio(x){
+    console.log('sound')
+    return(
+        <Sound
+            url={this.props.deck.cardHolder[x].audio}
+        />
+    );
+}
+
 const Level1Card = props => {
   return (
     <div className="playCard">
       <div className="cardImg"> Image</div>
       <div className="cardText">{cardDeck[cardNumber]}</div>
-      <span className="audioBtn">audio</span>
+      <span className="audioBtn" onClick={playAudio}>
+        audio
+      </span>
       <br />
       <br />
       <span onClick={handlePrevClick} className="navBtn">
