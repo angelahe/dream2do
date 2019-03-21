@@ -6,20 +6,19 @@ let cardNumber = 0;
 function handlePrevClick() {
   if (cardNumber === 0) {
     cardNumber = 10;
-    
   } else {
-    cardNumber--
-  } 
-  console.log(cardNumber)
+    cardNumber--;
+  }
+  console.log(cardNumber);
 }
 
 function handleNextClick() {
-    if (cardNumber === 10) {
-        cardNumber = 0;
-      } else {
-        cardNumber++
-      } 
-      console.log(cardNumber)
+  if (cardNumber === 10) {
+    cardNumber = 0;
+  } else {
+    cardNumber++;
+  }
+  console.log(cardNumber);
 }
 
 const Level1Card = props => {
@@ -43,4 +42,4 @@ const Level1Card = props => {
   );
 };
 
-export default Level1Card
+export default Level1Card;
