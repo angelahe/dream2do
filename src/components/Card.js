@@ -1,4 +1,4 @@
-class Card{
+class Card {
     constructor(image, textLanguageOne, textLanguageTwo, audio){
         this.image = image;
         this.textLanguageOne = textLanguageOne;

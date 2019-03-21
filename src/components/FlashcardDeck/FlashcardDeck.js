@@ -1,10 +1,10 @@
 import React from 'react';
-import StatusBar from './StatusBar';
-import NavBar from './NavBar';
-import PlayArea from './PlayArea';
-import Deck from './Deck';
+import StatusBar from '../StatusBar';
+import NavBar from '../NavBar';
+import PlayArea from '../PlayArea';
+import Deck from '../deck';
 
-import '../styles/Flashcard.css'
+import './Flashcard.css'
 
 class FlashcardDeck extends React.Component {
 
@@ -15,7 +15,6 @@ class FlashcardDeck extends React.Component {
         }
     }
     render() {
-
         return (
             <div className='flashcardWrapper'>
                 <StatusBar />

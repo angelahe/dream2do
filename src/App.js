@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import FlashcardDeck from './components/FlashcardDeck';
+import FlashcardDeck from './components/FlashcardDeck/FlashcardDeck.js';
 import './App.css';
 
 class App extends Component {
 
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
       this.state = {
         appClicked: "dashboard",
           message: ""
@@ -23,13 +23,12 @@ class App extends Component {
                 ?
                 <div>
                   <div> Hello world from app</div>
-                  < button onClick = {this.handleClick}>Go to Flashcards</button>
+                  <button onClick={this.handleClick}>Go to Flashcards</button>
                 </div>
                 : null
             }
-            {(this.state.appClicked==="flashcard")
-              ? <FlashcardDeck></FlashcardDeck>
-              : null}
+            {(this.state.appClicked === "flashcard")
+              ? <FlashcardDeck /> : null}
         </div>
     );
   }
