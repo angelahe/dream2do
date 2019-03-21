@@ -37,7 +37,9 @@ const Level1Card = props => {
     <div className="playCard">
       <div className="cardImg"> Image</div>
       <div className="cardText">{cardDeck[cardNumber]}</div>
-      <span className="audioBtn" onClick={() => playAudio()>audio</span>
+      <span className="audioBtn" onClick={playAudio}>
+        audio
+      </span>
       <br />
       <br />
       <span onClick={handlePrevClick} className="navBtn">
