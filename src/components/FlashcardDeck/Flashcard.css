@@ -7,10 +7,15 @@ html, body {
 #root {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
 }
 
 main { 
   width: 422px;
+  height: 464px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +31,10 @@ main {
   background:#666;
 }
 
+.navBar > h2, .statusBar > h1 {
+  color: white;
+}
+
 .playArea, .navBar, .statusBar {
   width: 100%;
 }
@@ -37,7 +46,6 @@ main {
 .playCard {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   background-color: honeydew;
 }
 
