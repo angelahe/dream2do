@@ -12,19 +12,15 @@ class Level1Card extends React.Component {
             <div className="playCard" >
                 <div className="cardImg"> Image</div>
                 <div className="cardText">{this.props.deck.cardHolder[this.state.currentCard].textLanguageOne}</div>
-                <span className="audioBtn" onClick={() => this.props.deck.playAudio()}>
-                    audio
-                </span>
-                <br />
-                <br />
-                <span onClick={() => {this.props.deck.handlePrevClick();this.setState({currentCard:this.props.deck.cardNumber})}} className="navBtn">
-                    prev
-                </span>
-                <br />
-                <span onClick={() => {this.props.deck.handleNextClick();this.setState({currentCard:this.props.deck.cardNumber})}} className="navBtn">
-                    next
-                </span>
-                <br />
+                <div className="card-btns">
+                  <div className="audioBtn" onClick={() => this.props.deck.playAudio()}>audio
+                  </div>
+                  <div onClick={() => {this.props.deck.handlePrevClick();this.setState({currentCard:this.props.deck.cardNumber})}} className="navBtn">prev
+                  </div>
+                  <div onClick={() => {this.props.deck.handleNextClick();this.setState({currentCard:this.props.deck.cardNumber})}} className="navBtn">next
+                  </div>
+                </div>
+                
             </div>
         );
     }
