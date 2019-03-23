@@ -1,35 +1,33 @@
-import React, { Component } from 'react';
+import React from 'react';
 import FlashcardDeck from './components/FlashcardDeck/FlashcardDeck.js';
 import './App.css';
 
-class App extends Component {
+class App extends React.Component {
 
   constructor() {
     super();
       this.state = {
-        appClicked: "dashboard",
+        appClicked: true,
           message: ""
       }
   }
 
   handleClick = () => {
-    this.setState({appClicked : "flashcard"});
+    this.setState({appClicked : false});
   }
 
   render() {
     return (
-        <div>
-            {(this.state.appClicked === "dashboard")
+        <main className="flashcardWrapper">
+            { this.state.appClicked
                 ?
                 <div>
                   <div> Hello world from app</div>
                   <button onClick={this.handleClick}>Go to Flashcards</button>
                 </div>
-                : null
+                : <FlashcardDeck />
             }
-            {(this.state.appClicked === "flashcard")
-              ? <FlashcardDeck /> : null}
-        </div>
+        </main>
     );
   }
 }
