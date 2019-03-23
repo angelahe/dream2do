@@ -1,44 +1,72 @@
-.flashcardWrapper{
-    width:422px;
-    margin:auto;
-    background:#ccc;
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navBar, .statusBar{
-    height:67px;
-    background:#666;
+#root {
+  display: flex;
+  justify-content: center;
 }
 
-.playArea {
-    height: 555px;
+main { 
+  width: 422px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+} 
+
+.navBar, .statusBar {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:67px;
+  background:#666;
+}
+
+.playArea, .navBar, .statusBar {
+  width: 100%;
+}
+
+.playArea { 
+  height: 100%;
 }
 
 .playCard {
-    width: 395px;
-    height: 545px;
-    background-color: honeydew;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background-color: honeydew;
+}
+
+.cardImg, .cardText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardImg {
-    height: 197px;
-    width: 303px;
-    background-color: #61dafb;
-
+  height: 197px;
 }
 
 .cardText {
-    height: 80px;
-    font-size: 30px;
+  font-size: 30px;
+  height: 100px;
 }
 
-.audioBtn {
-    height: 48px;
-    width: 48px;
-    background-color: #61dafb;
+.card-btns {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
 }
 
-.navBtn {
-    height: 48px;
-    width: 48px;
-    background-color: #61dafb;
+.audioBtn, .navBtn  {
+  padding: 5px;
 }
+
+.audioBtn, .navBtn, .cardImg  {
+  background-color: #61dafb;
+}
+

@@ -16,11 +16,12 @@ class FlashcardDeck extends React.Component {
     }
     render() {
         return (
-            <div className='flashcardWrapper'>
+          <React.Fragment>
                 <StatusBar />
                 <PlayArea deck={this.state.deck}/>
                 <NavBar />
-            </div>
+          </React.Fragment>
+ 
         );
 
     }
