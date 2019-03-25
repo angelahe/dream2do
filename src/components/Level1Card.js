@@ -13,7 +13,8 @@ class Level1Card extends React.Component {
         return (
             <div className="playCard" >
                 <div className="cardImg"> Image</div>
-                <div className="cardText">{this.state.review.deck.cardHolder[this.state.currentCard].textLanguageOne}</div>
+                <div className="cardText">{(this.state.review.cardSide) ? this.state.review.deck.cardHolder[this.state.currentCard].textLanguageTwo
+                                                          : this.state.review.deck.cardHolder[this.state.currentCard].textLanguageOne}</div>
                 <div className="card-btns">
                   <div className="audioBtn" onClick={() => this.state.review.playAudio()}>audio
                   </div>
