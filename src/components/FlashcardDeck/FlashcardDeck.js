@@ -8,22 +8,22 @@ import './Flashcard.css'
 
 class FlashcardDeck extends React.Component {
 
-    constructor (props) {
-        super(props)
-        this.state = {
-            deck : new Deck(),
-        }
+  constructor(props) {
+    super(props)
+    this.state = {
+      deck: new Deck(),
     }
-    render() {
-        return (
-          <React.Fragment>
-                <StatusBar />
-                <PlayArea deck={this.state.deck}/>
-                <NavBar />
-          </React.Fragment>
- 
-        );
+  }
+  render() {
+    return (
+      <React.Fragment>
+        <StatusBar />
+        <PlayArea deck={this.state.deck} />
+        <NavBar />
+      </React.Fragment>
 
-    }
+    );
+
+  }
 }
 export default FlashcardDeck;
