@@ -17,8 +17,8 @@ class review {
     }
     this.cardSide = !this.cardSide;
 
-    console.log("cardside is ", this.cardSide);
-    console.log(this.deck.cardHolder[this.cardNumber].textLanguageOne);
+    // console.log("cardside is ", this.cardSide);
+    // console.log(this.deck.cardHolder[this.cardNumber].textLanguageOne);
   }
 
   handlePrevClick = () => {
@@ -30,8 +30,8 @@ class review {
       }
     }
     this.cardSide = !this.cardSide;
-    console.log("cardside is ", this.cardSide);
-    console.log(this.deck.cardHolder[this.cardNumber].textLanguageOne);
+    // console.log("cardside is ", this.cardSide);
+    // console.log(this.deck.cardHolder[this.cardNumber].textLanguageOne);
   }
 
   // playAudio() {
