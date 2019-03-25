@@ -1,23 +1,25 @@
 import React from 'react';
+import review from './review';
 
 class Level1Card extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            currentCard: this.props.deck.cardNumber,
+            review: new review(),
+            currentCard:0,
         }
     }
     render() {
         return (
             <div className="playCard" >
                 <div className="cardImg"> Image</div>
-                <div className="cardText">{this.props.deck.cardHolder[this.state.currentCard].textLanguageOne}</div>
+                <div className="cardText">{this.state.review.deck.cardHolder[this.state.currentCard].textLanguageOne}</div>
                 <div className="card-btns">
-                  <div className="audioBtn" onClick={() => this.props.deck.playAudio()}>audio
+                  <div className="audioBtn" onClick={() => this.state.review.playAudio()}>audio
                   </div>
-                  <div onClick={() => {this.props.deck.handlePrevClick();this.setState({currentCard:this.props.deck.cardNumber})}} className="navBtn">prev
+                  <div onClick={() => {this.state.review.handlePrevClick();this.setState({currentCard:this.state.review.cardNumber})}} className="navBtn">prev
                   </div>
-                  <div onClick={() => {this.props.deck.handleNextClick();this.setState({currentCard:this.props.deck.cardNumber})}} className="navBtn">next
+                  <div onClick={() => {this.state.review.handleNextClick();this.setState({currentCard:this.state.review.cardNumber})}} className="navBtn">next
                   </div>
                 </div>
                 

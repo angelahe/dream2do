@@ -14,35 +14,7 @@ class Deck {
       new Card('img1', 'language1.9', 'language2.9', 'audiofile9'),
       new Card('img1', 'language1.10', 'language2.10', 'audiofile10'),
     ];
-    this.cardNumber = 0;
   }
-
-handlePrevClick() {
-  if (this.cardNumber === 0) {
-    this.cardNumber = this.cardHolder.length - 1;
-  } else {
-    this.cardNumber--;
-  }
-  console.log(this.cardHolder[this.cardNumber].textLanguageOne);
-}
-
-handleNextClick() {
-  if (this.cardNumber === this.cardHolder.length - 1) {
-    this.cardNumber = 0;
-  } else {
-    this.cardNumber++;
-  }
-  console.log(this.cardHolder[this.cardNumber].textLanguageOne);
-}
-
-playAudio() {
-  console.log('sound')
-  // return (
-  //   <Sound
-  //     url={this.props.deck.cardHolder[x].audio}
-  //   />
-  // );
-}
 }
 
 export default Deck;
