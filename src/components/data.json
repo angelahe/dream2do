@@ -1,27 +1,76 @@
 {
-	"lang": {
-		"en": [{
-			"key": "111",
-			"description": "lorem",
-			"cards": [
-				{
-          "dog": [
-            { "img": "dog.jpg" },
-            { "audio": "dog.mp3" },
-            { "related": ["puppy", "poochy", "bitch"] },
-            { "phrases": ["in the box", "out of the box"] },
-          ]
-        }, {"horse": []}, {"cat": }, {"rooster": []}, {"cow": []}, {"bear": []}
-			]
-		 }
+  "lang": {
+    "en": [
+      {
+        "key": "111",
+        "description": "lorem",
+        "cards": [
+          {
+            "dog": [
+              {
+                "img": "dog.jpg"
+              },
+              {
+                "audio": "dog.mp3"
+              },
+              {
+                "related": [
+                  "puppy",
+                  "poochy",
+                  "bitch"
+                ]
+              },
+              {
+                "phrases": [
+                  "in the box",
+                  "out of the box"
+                ]
+              }
+            ]
+          },
+          {
+            "horse": []
+          },
+          {
+            "cat": []
+          },
+          {
+            "rooster": []
+          },
+          {
+            "cow": []
+          },
+          {
+            "bear": []
+          }
+        ]
+      }
     ],
-		"es": [{
-			"key": "111",
-			"description": "lorem",
-			"cards": [
-				{"perro": []}, {"caballo": []}, {"gato": []}, {"gallo": []}, {"vaca": []}, {"oso": []}
-			]
-		  }
+    "es": [
+      {
+        "key": "111",
+        "description": "lorem",
+        "cards": [
+          {
+            "perro": []
+          },
+          {
+            "caballo": []
+          },
+          {
+            "gato": []
+          },
+          {
+            "gallo": []
+          },
+          {
+            "vaca": []
+          },
+          {
+            "oso": []
+          }
+        ]
+      }
     ]
-	}
+  }
 }
