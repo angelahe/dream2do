@@ -1,6 +1,6 @@
 import React from 'react';
-import FlashcardDeck from './components/FlashcardDeck/FlashcardDeck.js';
 import './App.css';
+import FlashcardDeck from './components/FlashcardDeck';
 
 class App extends React.Component {
 
@@ -18,6 +18,7 @@ class App extends React.Component {
 
   render() {
     return (
+
       <main className="flashcardWrapper">
         {this.state.appClicked
           ?
