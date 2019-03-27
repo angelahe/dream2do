@@ -17,10 +17,16 @@ class LevelSelector extends React.Component {
     })
   }
 
+  clearLevel = () => {
+    this.setState({
+      levelClicked:'',
+    })
+  }
+
   render(){
     if(this.state.levelClicked === 'review'){
       return(
-        <Level1Card />
+        <Level1Card clearLevel={this.clearLevel}/>
       );
     } else if (this.state.levelClicked === 'recognize'){
 

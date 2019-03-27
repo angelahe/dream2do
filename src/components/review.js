@@ -9,11 +9,12 @@ class review {
 
   handleNextClick = () => {
     if (!this.cardSide) {
-      if (this.cardNumber === this.deck.cardHolder.length - 1) {
-        this.cardNumber = 0;
-      } else {
+      // if (this.cardNumber === this.deck.cardHolder.length - 1) {
+      //   // this.cardNumber = 0;
+        
+      // } else {
         this.cardNumber++;
-      }
+      // }
     }
     this.cardSide = !this.cardSide;
 
