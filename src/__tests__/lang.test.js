@@ -14,39 +14,39 @@ test('should detect object creation', () => {
 
 test('addLang should add any to langArr', () => {
   const newLang = new lang('en')
-  const testArr = ['en', 'wookielove']
   const result = newLang.addLang('wookielove')
   // take result and compare result array to test array
-  expect(result).toContain('wookielove')
-  expect(result).toContain('wookielove')
+  expect(result[1]).toBe('wookielove')
   expect(result.length).toBe(2)
   expect(result.length).toBeLessThan(3)
 })
 
-xtest('editLang should remove the last language added', () => {
+test('editLang should remove the last language added', () => {
   const newLang = new lang('en')
-  const testArr = ['en', 'es']
-  const result = newLang.addLang('es')
+  let testArr = newLang.addLang('es')
+  expect(testArr.length).toBe(2)
+  testArr = newLang.editLang(testArr)
   // take result and compare result array to test array
-  expect(result).toBe(testArr)
+  expect(testArr.length).toBe(1)
 })
 
-xtest('deleteLangs should delete english from langArr', () => {
+test('deleteLangs should delete english from langArr', () => {
   const newLang = new lang('en')
-  const updatedArr = ['es']
-  const result = newLang.deleteLangs('en')
-  expect(result).toBe(updatedArr)
+  const updatedArr = []
+  const result = newLang.deleteLangs()
+  expect(result.length).toBe(updatedArr.length)
 })
 
-xtest('checkLang should find 2 languages', () => {
+test('checkLang should find 2 languages', () => {
   // instantiate the new lang Class
   const newLang = new lang('en')
+  //testing langArr length by default
+  const checkLangDefault = newLang.checkLang()
+  expect(checkLangDefault.length).toBe(1)
+
   const secondLanguage = 'es'
-  const newArray = ['en', 'es']
-
-  const addedArray = newLang.addLang(secondLanguage)
-
-  // take new Object that was intantiated and use method/function checkLang to test language array length.
-  const langs = newLang.checkLang(newArray)
-  expect(langs.length).toBe(addedArray.length)
+  newLang.addLang(secondLanguage)
+  const checkLangWithSpanish = newLang.checkLang()
+  //testing checkLang length
+  expect(checkLangWithSpanish.length).toBe(2)
 })
