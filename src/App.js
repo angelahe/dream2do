@@ -6,28 +6,28 @@ class App extends React.Component {
 
   constructor() {
     super();
-      this.state = {
-        appClicked: true,
-          message: ""
-      }
+    this.state = {
+      appClicked: true,
+      message: ""
+    }
   }
 
   handleClick = () => {
-    this.setState({appClicked : false});
+    this.setState({appClicked: false});
   }
 
   render() {
     return (
-        <main className="flashcardWrapper">
-            { this.state.appClicked
-                ?
-                <div>
-                  <div> Hello world from app</div>
-                  <button onClick={this.handleClick}>Go to Flashcards</button>
-                </div>
-                : <FlashcardDeck />
-            }
-        </main>
+      <main className="flashcardWrapper">
+        {this.state.appClicked
+          ?
+          <div>
+            <div> Hello world from app</div>
+            <button onClick={this.handleClick}>Go to Flashcards</button>
+          </div>
+          : <FlashcardDeck/>
+        }
+      </main>
     );
   }
 }
