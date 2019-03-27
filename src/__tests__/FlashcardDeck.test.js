@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import FlashcardDeck from "../components/FlashcardDeck/FlashcardDeck";
+import FlashcardDeck from "../components/FlashcardDeck";
 
 it('renders without crashing', () => {
   const div = document.createElement('div');

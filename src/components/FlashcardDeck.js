@@ -4,21 +4,21 @@ import DeckSelector from './DeckSelector';
 import StatusBar from './StatusBar';
 import NavBar from './NavBar';
 
-import './FlashcardDeck/Flashcard.css'
+import './Flashcard.css'
 
 class FlashcardDeck extends React.Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
-      deckSelected:'test',
+      deckSelected: 'test',
     }
   }
 
-  render(){
-    return(
+  render() {
+    return (
       <div className="flashCardDeck">
         <StatusBar />
-        {(this.state.deckSelected === '') ? <DeckSelector/> : null}
+        {(this.state.deckSelected === '') ? <DeckSelector /> : null}
         {(this.state.deckSelected !== '') ? <LevelSelector {...this.state} /> : null}
         <NavBar />
       </div>
