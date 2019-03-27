@@ -6,27 +6,31 @@
  */
 
 export default class lang {
-  constructor(lang = 'en') {
-    this.lang = lang
-    this.langArr = [lang]
+  constructor(lang = "en") {
+    this.lang = lang;
+    this.langArr = [lang];
   }
 
   // should add a language
   addLang(langShortcode) {
-    return this.langArr.concat(langShortcode)
+    this.langArr.push(langShortcode);
+    return this.langArr;
   }
   // Should remove last language added
   editLang() {
-    return true
+    if (this.langArr.length === 2) {
+      this.langArr.pop();
+      return this.langArr;
+    }
   }
 
   // Should take array and clear all languages
   deleteLangs() {
-    return true
+    return this.langArr = []
   }
 
   // Should return array of languages
-  checkLang(arr) {
-    return arr
+  checkLang() {
+    return this.langArr
   }
 }
