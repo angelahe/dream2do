@@ -19,7 +19,7 @@ class recognize {
     this.cardSide = !this.cardSide;
 
     console.log(`${this.deck.cardHolder[this.cardNumber].textLanguageOne},${this.deck.cardHolder[this.cardNumber].textLanguageTwo}, Level 2, Correct`);
-    localStorage.setItem('log',JSON.stringify({
+    localStorage.setItem(`log${this.cardNumber}`,JSON.stringify({
       L1:this.deck.cardHolder[this.cardNumber].textLanguageOne,
       L2:this.deck.cardHolder[this.cardNumber].textLanguageTwo,
       date:`28/3/2019`,
