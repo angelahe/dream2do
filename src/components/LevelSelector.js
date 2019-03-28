@@ -1,5 +1,7 @@
 import React from 'react';
 import Level1Card from './Level1Card';
+import Level2Card from './Level2Card';
+
 import Deck from './deck';
 
 class LevelSelector extends React.Component {
@@ -29,7 +31,9 @@ class LevelSelector extends React.Component {
         <Level1Card clearLevel={this.clearLevel}/>
       );
     } else if (this.state.levelClicked === 'recognize'){
-
+      return(
+        <Level2Card clearLevel={this.clearLevel}/>
+      );
     } else if (this.state.levelClicked === 'produce'){
 
     } else {
