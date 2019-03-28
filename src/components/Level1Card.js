@@ -43,7 +43,6 @@ class Level1Card extends React.Component {
             }} className="navBtn">next
             </div>
           </div>
-
         </div>
       );
     }
