@@ -16,7 +16,6 @@ test('test result log', () => {
   const newLog = new log();
   newLog.write(level, L1, L2, correct);
   let testRecord = newLog.read();
-  console.log(testRecord);
 
   expect(testRecord[0].level).toBe(level);
   expect(testRecord[0].L1).toBe(L1);

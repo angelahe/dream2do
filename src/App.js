@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import FlashcardDeck from './components/FlashcardDeck';
+import Splash from './components/Splash'
 
 class App extends React.Component {
 
@@ -13,7 +14,7 @@ class App extends React.Component {
   }
 
   handleClick = () => {
-    this.setState({appClicked: false});
+    this.setState({ appClicked: false });
   }
 
   render() {
@@ -22,12 +23,10 @@ class App extends React.Component {
       <main className="flashcardWrapper">
         {this.state.appClicked
           ?
-          <div>
-            <div> Hello world from app</div>
-            <button onClick={this.handleClick}>Go to Flashcards</button>
-          </div>
-          : <FlashcardDeck/>
+          <Splash handleClick={this.handleClick} />
+          : <FlashcardDeck />
         }
+
       </main>
     );
   }

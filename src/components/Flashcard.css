@@ -13,7 +13,7 @@ html, body {
 
 }
 
-main { 
+main {
   width: 422px;
   height: 464px;
   display: flex;
@@ -21,7 +21,7 @@ main {
   align-items: center;
   flex-direction: column;
   margin-top: 10px;
-} 
+}
 
 .navBar, .statusBar {
   display:flex;
@@ -39,7 +39,7 @@ main {
   width: 100%;
 }
 
-.playArea { 
+.playArea {
   height: 100%;
 }
 
@@ -55,9 +55,9 @@ main {
   align-items: center;
 }
 
-.cardImg {
+/* .cardImg {
   height: 197px;
-}
+} */
 
 .cardText {
   font-size: 30px;

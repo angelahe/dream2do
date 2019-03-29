@@ -11,8 +11,9 @@ class Level1Card extends React.Component {
   }
 
   render() {
-    if (this.state.currentCard === this.state.review.deck.cardHolder.length){
-      return(
+    //console.log('Level1Card: this.state.review', this.state.review)
+    if (this.state.currentCard === this.state.review.deck.cardHolder.length) {
+      return (
         <div>
           <h1>You Finished</h1>
           <button onClick={() => this.props.clearLevel()}>Go Back</button>
@@ -21,25 +22,25 @@ class Level1Card extends React.Component {
     } else {
       return (
         <div className="playCard">
-          <div className="cardImg"> Image</div>
+          <img alt={this.state.review.deck.cardHolder[this.state.currentCard].textLanguageOne} className="cardImg" key={this.state.currentCard} src={this.state.review.deck.cardHolder[this.state.currentCard].image} />
           <div
             className="cardText">{(this.state.review.cardSide) ? this.state.review.deck.cardHolder[this.state.currentCard].textLanguageTwo
-            : this.state.review.deck.cardHolder[this.state.currentCard].textLanguageOne}</div>
+              : this.state.review.deck.cardHolder[this.state.currentCard].textLanguageOne}</div>
           <div className="card-btns">
             <div className="audioBtn" onClick={() => this.state.review.playAudio()}>audio
             </div>
             {
-              (this.state.currentCard === 0 && this.state.review.cardSide === true)?
-                null:
+              (this.state.currentCard === 0 && this.state.review.cardSide === true) ?
+                null :
                 <div onClick={() => {
-                    this.state.review.handlePrevClick();
-                    this.setState({currentCard: this.state.review.cardNumber})
-                  }} className="navBtn">prev
+                  this.state.review.handlePrevClick();
+                  this.setState({ currentCard: this.state.review.cardNumber })
+                }} className="navBtn">prev
                 </div>
             }
             <div onClick={() => {
               this.state.review.handleNextClick();
-              this.setState({currentCard: this.state.review.cardNumber})
+              this.setState({ currentCard: this.state.review.cardNumber })
             }} className="navBtn">next
             </div>
           </div>
