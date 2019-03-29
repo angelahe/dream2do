@@ -1,12 +1,11 @@
 /**
- * Represents a language manager
+ * Represents a user manager
  * @constructor
- * @param {string} lang - The label of the language.
- * @param {Array} langArr - The array of the languages.
+ * @param {Object} user - The object for user settings.
  */
 
 export default class User {
-  constructor(firstName, lastName ) {
+  constructor(firstName, lastName) {
     this.user = {
       firstName,
       lastName
@@ -17,12 +16,12 @@ export default class User {
   updateUser(changedName, nameType) {
     // console.log(this.user)
     // console.log(changedName, nameType)
-    if(nameType === 'firstName'){
-       // change first name user object
+    if (nameType === 'firstName') {
+      // change first name user object
       this.user.firstName = changedName
       return this.user
-     
-    } else if (nameType === 'lastName'){
+
+    } else if (nameType === 'lastName') {
       // change last name user object
       this.user.lastName = changedName
       return this.user
@@ -33,6 +32,6 @@ export default class User {
   }
 
   deleteUser() {
-    return this.user ={}
+    return this.user = {}
   }
 }
