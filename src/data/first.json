@@ -10,7 +10,7 @@
         "order": 1,
         "en": {
           "word": "the bear",
-          "audio": "../audio/bear.mp3"
+          "audio": "../audio/bearEN.mp3"
         },
         "es": {
           "word": "el oso",
@@ -23,7 +23,7 @@
         "order": 2,
         "en": {
           "word": "the cat",
-          "audio": "../audio/cat.mp3"
+          "audio": "../audio/catEN.mp3"
         },
         "es": {
           "word": "el gato",
@@ -36,7 +36,7 @@
         "order": 3,
         "en": {
           "word": "the fish",
-          "audio": "../audio/fish.mp3"
+          "audio": "../audio/fishEN.mp3"
         },
         "es": {
           "word": "el pez",
@@ -49,7 +49,7 @@
         "order": 4,
         "en": {
           "word": "the dog",
-          "audio": "../audio/dog.mp3"
+          "audio": "../audio/dogEN.mp3"
         },
         "es": {
           "word": "el perro",
@@ -62,7 +62,7 @@
         "order": 5,
         "en": {
           "word": "the bird",
-          "audio": "../audio/bird.mp3"
+          "audio": "../audio/birdEN.mp3"
         },
         "es": {
           "word": "el pájaro",
@@ -75,7 +75,7 @@
         "order": 6,
         "en": {
           "word": "the horse",
-          "audio": "../audio/horse.mp3"
+          "audio": "../audio/horseEN.mp3"
         },
         "es": {
           "word": "el caballo",
@@ -88,7 +88,7 @@
         "order": 7,
         "en": {
           "word": "the cow",
-          "audio": "../audio/cow.mp3"
+          "audio": "../audio/cowEN.mp3"
         },
         "es": {
           "word": "la vaca",
@@ -101,7 +101,7 @@
         "order": 8,
         "en": {
           "word": "the chicken",
-          "audio": "chicken.mp3"
+          "audio": "../audio/chickenEN.mp3"
         },
         "es": {
           "word": "la gallina",
@@ -127,7 +127,7 @@
         "order": 10,
         "en": {
           "word": "the wolf",
-          "audio": "../audio/wolf.mp3"
+          "audio": "../audio/wolfEN.mp3"
         },
         "es": {
           "word": "el lobo",
@@ -150,7 +150,7 @@
         "order": 1,
         "en": {
           "word": "colours",
-          "audio": "../audio/colours.mp3"
+          "audio": "../audio/coloursEN.mp3"
         },
         "es": {
           "word": "los colores",
@@ -163,7 +163,7 @@
         "order": 2,
         "en": {
           "word": "black",
-          "audio": "../audio/black.mp3"
+          "audio": "../audio/blackEN.mp3"
         },
         "es": {
           "word": "negro",
@@ -176,7 +176,7 @@
         "order": 3,
         "en": {
           "word": "white",
-          "audio": "../audio/white.mp3"
+          "audio": "../audio/whiteEN.mp3"
         },
         "es": {
           "word": "blanco",
@@ -189,7 +189,7 @@
         "order": 4,
         "en": {
           "word": "red",
-          "audio": "../audio/red.mp3"
+          "audio": "../audio/redEN.mp3"
         },
         "es": {
           "word": "rojo",
@@ -202,7 +202,7 @@
         "order": 5,
         "en": {
           "word": "green",
-          "audio": "../audio/green.mp3"
+          "audio": "../audio/greenEN.mp3"
         },
         "es": {
           "word": "verde",
@@ -215,7 +215,7 @@
         "order": 6,
         "en": {
           "word": "blue",
-          "audio": "../audio/blue.mp3"
+          "audio": "../audio/blueEN.mp3"
         },
         "es": {
           "word": "azul",
@@ -228,7 +228,7 @@
         "order": 7,
         "en": {
           "word": "yellow",
-          "audio": "../audio/yellow.mp3"
+          "audio": "../audio/yellowEN.mp3"
         },
         "es": {
           "word": "amarillo",
@@ -241,7 +241,7 @@
         "order": 8,
         "en": {
           "word": "grey",
-          "audio": "../audio/grey.mp3"
+          "audio": "../audio/greyEN.mp3"
         },
         "es": {
           "word": "gris",
@@ -254,7 +254,7 @@
         "order": 9,
         "en": {
           "word": "brown",
-          "audio": "../audio/brown.mp3"
+          "audio": "../audio/brownEN.mp3"
         },
         "es": {
           "word": "marrón",
@@ -267,7 +267,7 @@
         "order": 10,
         "en": {
           "word": "purple",
-          "audio": "../audio/purple.mp3"
+          "audio": "../audio/purpleEN.mp3"
         },
         "es": {
           "word": "morado",
@@ -290,7 +290,7 @@
         "order": 1,
         "en": {
           "word": "one",
-          "audio": "../audio/one.mp3"
+          "audio": "../audio/oneEN.mp3"
         },
         "es": {
           "word": "uno",
@@ -303,7 +303,7 @@
         "order": 2,
         "en": {
           "word": "two",
-          "audio": "../audio/two.mp3"
+          "audio": "../audio/twoEN.mp3"
         },
         "es": {
           "word": "dos",
@@ -316,7 +316,7 @@
         "order": 3,
         "en": {
           "word": "three",
-          "audio": "../audio/three.mp3"
+          "audio": "../audio/threeEN.mp3"
         },
         "es": {
           "word": "tres",
@@ -329,7 +329,7 @@
         "order": 4,
         "en": {
           "word": "four",
-          "audio": "../audio/four.mp3"
+          "audio": "../audio/fourEN.mp3"
         },
         "es": {
           "word": "cuatro",
@@ -342,7 +342,7 @@
         "order": 5,
         "en": {
           "word": "five",
-          "audio": "../audio/five.mp3"
+          "audio": "../audio/fiveEN.mp3"
         },
         "es": {
           "word": "cinco",
@@ -355,7 +355,7 @@
         "order": 6,
         "en": {
           "word": "six",
-          "audio": "../audio/six.mp3"
+          "audio": "../audio/sixEN.mp3"
         },
         "es": {
           "word": "seis",
@@ -368,7 +368,7 @@
         "order": 7,
         "en": {
           "word": "seven",
-          "audio": "../audio/seven.mp3"
+          "audio": "../audio/sevenEN.mp3"
         },
         "es": {
           "word": "siete",
@@ -381,7 +381,7 @@
         "order": 8,
         "en": {
           "word": "eight",
-          "audio": "../audio/eight.mp3"
+          "audio": "../audio/eightEN.mp3"
         },
         "es": {
           "word": "ocho",
@@ -394,7 +394,7 @@
         "order": 9,
         "en": {
           "word": "nine",
-          "audio": "../audio/nine.mp3"
+          "audio": "../audio/nineEN.mp3"
         },
         "es": {
           "word": "nueve",
@@ -407,7 +407,7 @@
         "order": 10,
         "en": {
           "word": "ten",
-          "audio": "../audio/ten.mp3"
+          "audio": "../audio/tenEN.mp3"
         },
         "es": {
           "word": "diez",
