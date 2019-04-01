@@ -1,0 +1,40 @@
+deck #30
+key: 4.1.7
+desc: animals
+1 - el oso
+2- el gato
+3 - el pez
+4- el perro
+5- el pájaro
+6- el caballo
+7- la vaca
+8- el pollo ***********
+9 - el cerdo
+10 -el lobo
+
+order:  #13
+key: 2.1.5
+********** COLOURS OR COLORS?
+1 - color ****** los colores 
+2- negro
+3- blanco
+4- rojo
+5- verde
+6- azul
+7- amarillo
+8- gris
+9- marrón
+10- morado
+
+deck #12
+desc: 1.2.4
+uno
+dos
+tres
+cuatro
+cinco
+seis
+siete
+ocho
+nueve
+diez

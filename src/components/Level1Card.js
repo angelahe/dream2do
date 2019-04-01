@@ -18,6 +18,17 @@ class Level1Card extends React.Component {
     }
   }
 
+  // set current card and card side to the initial values
+  continueclick = () => {
+    let newReview = this.state.review;
+    newReview.cardNumber = 0;
+    newReview.cardSide = true;
+    this.setState({
+      review: newReview,
+      currentCard: this.state.review.cardNumber,
+    })
+  }
+
   render() {
     //console.log('Level1Card: this.state.review', this.state.review)
 
@@ -27,6 +38,7 @@ class Level1Card extends React.Component {
         <div>
           <h1>You Finished</h1>
           <button onClick={() => this.props.clearLevel()}>Go Back</button>
+          <button onClick={this.continueclick}>Continue</button>
         </div>
       );
     } else {
