@@ -1,17 +1,27 @@
+/**
+ * Component for review
+ * @constructor
+ * @param {Object} review - review object
+ * @param {Number} currentCard - Current card number
+ */
+
 import React from 'react';
 import review from './review';
+import { Icon } from 'antd';
 
 class Level1Card extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      review: new review(),
+      review: new review(this.props.currentDeck),
       currentCard: 0,
     }
   }
 
   render() {
     //console.log('Level1Card: this.state.review', this.state.review)
+
+    // If the current card is after the last, show the finished screen
     if (this.state.currentCard === this.state.review.deck.cardHolder.length) {
       return (
         <div>
@@ -27,22 +37,21 @@ class Level1Card extends React.Component {
             className="cardText">{(this.state.review.cardSide) ? this.state.review.deck.cardHolder[this.state.currentCard].textLanguageTwo
               : this.state.review.deck.cardHolder[this.state.currentCard].textLanguageOne}</div>
           <div className="card-btns">
-            <div className="audioBtn" onClick={() => this.state.review.playAudio()}>audio
-            </div>
-            {
+            { // Hide the previous button if on the first side of the first card
               (this.state.currentCard === 0 && this.state.review.cardSide === true) ?
                 null :
-                <div onClick={() => {
+                <Icon style={{ fontSize: '32px' }} onClick={() => {
                   this.state.review.handlePrevClick();
                   this.setState({ currentCard: this.state.review.cardNumber })
-                }} className="navBtn">prev
-                </div>
+                }} type="step-backward" />
             }
-            <div onClick={() => {
+            <Icon style={{ fontSize: '32px' }} onClick={() => this.state.review.playAudio()} type="sound" />
+
+            <Icon style={{ fontSize: '32px' }} onClick={() => {
               this.state.review.handleNextClick();
               this.setState({ currentCard: this.state.review.cardNumber })
-            }} className="navBtn">next
-            </div>
+            }} type="step-forward" />
+
           </div>
         </div>
       );

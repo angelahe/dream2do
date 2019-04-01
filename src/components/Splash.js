@@ -1,5 +1,8 @@
-import React from 'react'
+/**
+ * Component for the first screen.
+ */
 
+import React from 'react'
 
 const Splash = (props) => {
   return (

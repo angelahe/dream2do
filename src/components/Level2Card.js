@@ -1,3 +1,10 @@
+/**
+ * Component for recognize
+ * @constructor
+ * @param {Object} recognize - recognize object
+ * @param {Number} currentCard - Current card number
+ */
+
 import React from 'react';
 import recognize from './recognize';
 
@@ -5,7 +12,7 @@ class Level2Card extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      recognize: new recognize(),
+      recognize: new recognize(this.props.currentDeck),
       currentCard: 0,
     }
   }

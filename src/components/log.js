@@ -4,13 +4,14 @@
  *   @check - if log is null, create a new log
  *   @param {object} today - get today's date in YYYY-MM-DD format
  */
+
 class log{
   constructor(){
     if(localStorage.getItem('log') === null){localStorage.setItem('log','[]')}
     this.today = new Date();
   }
 
-
+  // Write to the log for recognize and produce
   write(level,languageOne,languageTwo,correct){
     let testResult = JSON.parse(localStorage.getItem('log'));
     const testLogItem = {
@@ -28,6 +29,7 @@ class log{
     );
   }
 
+  // Parse the recognize/produce log back into an array
   read(){
     return JSON.parse(localStorage.getItem('log'))
   }

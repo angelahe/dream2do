@@ -1,3 +1,7 @@
+/**
+ * Component the status bar (Top bar)
+ */
+
 import React from 'react';
 
 const StatusBar = (props) => {

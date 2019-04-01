@@ -1,3 +1,7 @@
+/**
+ * Component the navigation bar (Bottom bar)
+ */
+
 import React from 'react';
 
 const NavBar = (props) => {

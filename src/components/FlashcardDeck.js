@@ -1,3 +1,9 @@
+/**
+ * Component to switch between deck selector and level selector
+ * @constructor
+ * @param {Object} state - Variable holding the deck selected
+ */
+
 import React from 'react';
 import LevelSelector from './LevelSelector';
 import DeckSelector from './DeckSelector';
