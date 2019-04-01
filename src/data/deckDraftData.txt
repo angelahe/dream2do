@@ -1,0 +1,38 @@
+deck #30
+desc: 4.1.7
+oso
+gato
+pez
+perro
+pájaro
+caballo
+vaca
+pollo
+cerdo
+lobo
+
+deck:  #13
+desc: 2.1.5
+color
+negro
+blanco
+rojo
+verde
+azul
+amarillo
+gris
+marrón
+morado
+
+deck #12
+desc: 1.2.4
+uno
+dos
+tres
+cuatro
+cinco
+seis
+siete
+ocho
+nueve
+diez
