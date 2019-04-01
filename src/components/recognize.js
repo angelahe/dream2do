@@ -8,16 +8,17 @@
  */
 
 import log from './log'
+import Deck from './deck'
 
 class recognize {
   constructor(deck) {
     this.cardNumber = 0;
     this.cardSide = true; //Language one is true, language two is false
-    this.deck = JSON.parse(JSON.stringify(deck));
+    this.deck = (deck !== undefined) ? JSON.parse(JSON.stringify(deck)) : new Deck();
     this.log = new log();
   }
 
-  logTestResult(correct){
+  logTestResult = (correct) => {
     this.log.write(
       'Level 2',
       this.deck.cardHolder[this.cardNumber].textLanguageOne,
@@ -25,25 +26,44 @@ class recognize {
       correct)
   }
 
-  cardCorrect = () => {
-
+  goNextCard = () => {
     if (!this.cardSide) {
-      if (this.cardNumber === this.deck.cardHolder.length - 1) {
+      // console.log(`Current card: ${this.cardNumber}, Deck length: ${this.deck.cardHolder.length}`)
+      if (this.cardNumber >= this.deck.cardHolder.length - 1) {
+        // console.log('loop')
         this.cardNumber = 0;
       } else {
         this.cardNumber++;
       }
     }
     this.cardSide = !this.cardSide;
+  }
 
-    console.log(`${this.deck.cardHolder[this.cardNumber].textLanguageOne},${this.deck.cardHolder[this.cardNumber].textLanguageTwo}, Level 2, Correct`);
+  nextSide = () => {
+    this.cardSide = !this.cardSide;
+  }
+
+  cardCorrect = () => {
+
+    //Log stuff
+    // console.log(`${this.deck.cardHolder[this.cardNumber].textLanguageOne},${this.deck.cardHolder[this.cardNumber].textLanguageTwo}, Level 2, Correct`);
     this.logTestResult(true);
+
+    //Remove current card
+    this.deck.cardHolder.splice(this.cardNumber,1);
+
+    //Go to next card
+    this.goNextCard();
   }
 
   cardWrong = () => {
-    
-    console.log(`${this.deck.cardHolder[this.cardNumber].textLanguageOne},${this.deck.cardHolder[this.cardNumber].textLanguageTwo}, Level 2, Incorrect`);
+
+    //Log stuff
+    // console.log(`${this.deck.cardHolder[this.cardNumber].textLanguageOne},${this.deck.cardHolder[this.cardNumber].textLanguageTwo}, Level 2, Incorrect`);
     this.logTestResult(false);
+
+    //Go to next card
+    this.goNextCard();
   }
 
 }
