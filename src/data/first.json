@@ -9,7 +9,7 @@
         "img": "bear.jpg",
         "order": 1,
         "en": {
-          "word": "bear",
+          "word": "the bear",
           "audio": "bear.mp3"
         },
         "es": {
@@ -22,7 +22,7 @@
         "img": "cat.jpg",
         "order": 2,
         "en": {
-          "word": "cat",
+          "word": "the cat",
           "audio": "cat.mp3"
         },
         "es": {
@@ -35,7 +35,7 @@
         "img": "fish.jpg",
         "order": 3,
         "en": {
-          "word": "fish",
+          "word": "the fish",
           "audio": "fish.mp3"
         },
         "es": {
@@ -48,7 +48,7 @@
         "img": "dog.jpg",
         "order": 4,
         "en": {
-          "word": "dog",
+          "word": "the dog",
           "audio": "dog.mp3"
         },
         "es": {
@@ -61,7 +61,7 @@
         "img": "bird.jpg",
         "order": 5,
         "en": {
-          "word": "bird",
+          "word": "the bird",
           "audio": "bird.mp3"
         },
         "es": {
@@ -74,7 +74,7 @@
         "img": "horse.jpg",
         "order": 6,
         "en": {
-          "word": "horse",
+          "word": "the horse",
           "audio": "horse.mp3"
         },
         "es": {
@@ -87,7 +87,7 @@
         "img": "cow.jpg",
         "order": 7,
         "en": {
-          "word": "cow",
+          "word": "the cow",
           "audio": "cow.mp3"
         },
         "es": {
@@ -100,11 +100,11 @@
         "img": "chicken.jpg",
         "order": 8,
         "en": {
-          "word": "chicken",
+          "word": "the chicken",
           "audio": "chicken.mp3"
         },
         "es": {
-          "word": "el pollo",
+          "word": "la gallina",
           "audio": "chickenES.mp3"
         }
       },
@@ -113,7 +113,7 @@
         "img": "pig.jpg",
         "order": 9,
         "en": {
-          "word": "pig",
+          "word": "the pig",
           "audio": "pig.mp3"
         },
         "es": {
@@ -126,7 +126,7 @@
         "img": "wolf.jpg",
         "order": 10,
         "en": {
-          "word": "wolf",
+          "word": "the wolf",
           "audio": "wolf.mp3"
         },
         "es": {
@@ -211,67 +211,207 @@
       },
       {
         "key": 6,
-        "img": "horse.jpg",
+        "img": "blue.jpg",
         "order": 6,
         "en": {
-          "word": "horse",
-          "audio": "horse.mp3"
+          "word": "blue",
+          "audio": "blue.mp3"
         },
         "es": {
-          "word": "el caballo",
-          "audio": "horseES.mp3"
+          "word": "azul",
+          "audio": "blueES.mp3"
         }
       },
       {
         "key": 7,
-        "img": "cow.jpg",
+        "img": "yellow.jpg",
         "order": 7,
         "en": {
-          "word": "cow",
-          "audio": "cow.mp3"
+          "word": "yellow",
+          "audio": "yellow.mp3"
         },
         "es": {
-          "word": "la vaca",
-          "audio": "cowES.mp3"
+          "word": "amarillo",
+          "audio": "yellowES.mp3"
         }
       },
       {
         "key": 8,
-        "img": "chicken.jpg",
+        "img": "grey.jpg",
         "order": 8,
         "en": {
-          "word": "chicken",
-          "audio": "chicken.mp3"
+          "word": "grey",
+          "audio": "grey.mp3"
         },
         "es": {
-          "word": "el pollo",
-          "audio": "chickenES.mp3"
+          "word": "gris",
+          "audio": "greyES.mp3"
         }
       },
       {
         "key": 9,
-        "img": "pig.jpg",
+        "img": "brown.jpg",
         "order": 9,
         "en": {
-          "word": "pig",
-          "audio": "pig.mp3"
+          "word": "brown",
+          "audio": "brown.mp3"
         },
         "es": {
-          "word": "el cerdo",
-          "audio": "pigES.mp3"
+          "word": "marrón",
+          "audio": "brownES.mp3"
         }
       },
       {
         "key": 10,
-        "img": "wolf.jpg",
+        "img": "purple.jpg",
         "order": 10,
         "en": {
-          "word": "wolf",
-          "audio": "wolf.mp3"
+          "word": "purple",
+          "audio": "purple.mp3"
         },
         "es": {
-          "word": "el lobo",
-          "audio": "wolfES.mp3"
+          "word": "morado",
+          "audio": "purpleES.mp3"
+        }
+      }
+    ]
+  }
+},
+// end of second deck
+{
+  "deck": {
+    "key": "1.2.4",
+    "desc": "numbers",
+    "order": 12,
+    "cards": [
+      {
+        "key": 1,
+        "img": "one.jpg",
+        "order": 1,
+        "en": {
+          "word": "one",
+          "audio": "one.mp3"
+        },
+        "es": {
+          "word": "uno",
+          "audio": "oneES.mp3"
+        }
+      },
+      {
+        "key": 2,
+        "img": "two.jpg",
+        "order": 2,
+        "en": {
+          "word": "two",
+          "audio": "two.mp3"
+        },
+        "es": {
+          "word": "dos",
+          "audio": "dosES.mp3"
+        }
+      },
+      {
+        "key": 3,
+        "img": "three.jpg",
+        "order": 3,
+        "en": {
+          "word": "three",
+          "audio": "three.mp3"
+        },
+        "es": {
+          "word": "tres",
+          "audio": "threeES.mp3"
+        }
+      },
+      {
+        "key": 4,
+        "img": "four.jpg",
+        "order": 4,
+        "en": {
+          "word": "four",
+          "audio": "four.mp3"
+        },
+        "es": {
+          "word": "cuatro",
+          "audio": "fourES.mp3"
+        }
+      },
+      {
+        "key": 5,
+        "img": "five.jpg",
+        "order": 5,
+        "en": {
+          "word": "five",
+          "audio": "five.mp3"
+        },
+        "es": {
+          "word": "cinco",
+          "audio": "fiveES.mp3"
+        }
+      },
+      {
+        "key": 6,
+        "img": "six.jpg",
+        "order": 6,
+        "en": {
+          "word": "six",
+          "audio": "six.mp3"
+        },
+        "es": {
+          "word": "seis",
+          "audio": "sixES.mp3"
+        }
+      },
+      {
+        "key": 7,
+        "img": "seven.jpg",
+        "order": 7,
+        "en": {
+          "word": "seven",
+          "audio": "seven.mp3"
+        },
+        "es": {
+          "word": "siete",
+          "audio": "sevenES.mp3"
+        }
+      },
+      {
+        "key": 8,
+        "img": "eight.jpg",
+        "order": 8,
+        "en": {
+          "word": "eight",
+          "audio": "eight.mp3"
+        },
+        "es": {
+          "word": "ocho",
+          "audio": "eightES.mp3"
+        }
+      },
+      {
+        "key": 9,
+        "img": "nine.jpg",
+        "order": 9,
+        "en": {
+          "word": "nine",
+          "audio": "nine.mp3"
+        },
+        "es": {
+          "word": "nueve",
+          "audio": "nineES.mp3"
+        }
+      },
+      {
+        "key": 10,
+        "img": "ten.jpg",
+        "order": 10,
+        "en": {
+          "word": "ten",
+          "audio": "ten.mp3"
+        },
+        "es": {
+          "word": "diez",
+          "audio": "ten,ES.mp3"
         }
       }
     ]
