@@ -1,3 +1,10 @@
+/**
+ * Component for review
+ * @constructor
+ * @param {Object} review - review object
+ * @param {Number} currentCard - Current card number
+ */
+
 import React from 'react';
 import review from './review';
 
@@ -5,13 +12,15 @@ class Level1Card extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      review: new review(),
+      review: new review(this.props.currentDeck),
       currentCard: 0,
     }
   }
 
   render() {
     //console.log('Level1Card: this.state.review', this.state.review)
+
+    // If the current card is after the last, show the finished screen
     if (this.state.currentCard === this.state.review.deck.cardHolder.length) {
       return (
         <div>
@@ -29,7 +38,7 @@ class Level1Card extends React.Component {
           <div className="card-btns">
             <div className="audioBtn" onClick={() => this.state.review.playAudio()}>audio
             </div>
-            {
+            { // Hide the previous button if on the first side of the first card
               (this.state.currentCard === 0 && this.state.review.cardSide === true) ?
                 null :
                 <div onClick={() => {

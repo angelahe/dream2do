@@ -1,20 +1,22 @@
-import Deck from './deck'
+/**
+ * Logic for the review level
+ * @constructor
+ *   @param {Number} cardNumber - Current card number
+ *   @param {Boolean} cardSide - Current card side
+ *   @param {object} deck - Deck object
+ */
 
 class review {
-  constructor() {
+  constructor(deck) {
     this.cardNumber = 0;
     this.cardSide = true; //Language one is true, language two is false
-    this.deck = new Deck();
+    this.deck = JSON.parse(JSON.stringify(deck));
   }
 
+  // Called when the next card button is pressed
   handleNextClick = () => {
     if (!this.cardSide) {
-      // if (this.cardNumber === this.deck.cardHolder.length - 1) {
-      //   // this.cardNumber = 0;
-        
-      // } else {
         this.cardNumber++;
-      // }
     }
     this.cardSide = !this.cardSide;
 
@@ -22,6 +24,7 @@ class review {
     // console.log(this.deck.cardHolder[this.cardNumber].textLanguageOne);
   }
 
+  // Called when the previous card button is pressed
   handlePrevClick = () => {
     if (this.cardSide) {
       if (this.cardNumber === 0) {

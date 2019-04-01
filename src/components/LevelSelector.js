@@ -1,3 +1,10 @@
+/**
+ * Component to select the level
+ * @constructor
+ * @param {Object} deck - deck object
+ * @param {String} levelClicked - the level the user clicked on
+ */
+
 import React from 'react';
 import Level1Card from './Level1Card';
 import Level2Card from './Level2Card';
@@ -13,6 +20,7 @@ class LevelSelector extends React.Component {
     }
   }
 
+  // get the text from the button and use that to select the correct level component
   handleClick = (args) =>{
     this.setState({
       levelClicked:args.target.textContent.toLowerCase()
@@ -28,11 +36,11 @@ class LevelSelector extends React.Component {
   render(){
     if(this.state.levelClicked === 'review'){
       return(
-        <Level1Card clearLevel={this.clearLevel}/>
+        <Level1Card clearLevel={this.clearLevel} currentDeck={this.state.deck}/>
       );
     } else if (this.state.levelClicked === 'recognize'){
       return(
-        <Level2Card clearLevel={this.clearLevel}/>
+        <Level2Card clearLevel={this.clearLevel} currentDeck={this.state.deck}/>
       );
     } else if (this.state.levelClicked === 'produce'){
 

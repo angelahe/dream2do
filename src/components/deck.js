@@ -1,3 +1,9 @@
+/**
+ * Holder object for deck variables
+ * @constructor
+ *   @param {Array} cardHolder - Holds Card objects
+ */
+
 import Card from './card';
 
 class Deck {

@@ -1,11 +1,19 @@
-import Deck from './deck'
+/**
+ * Logic for the recognize level
+ * @constructor
+ *   @param {Number} cardNumber - Current card number
+ *   @param {Boolean} cardSide - Current card side
+ *   @param {object} deck - Deck object
+ *   @param {object} log - Logging object
+ */
+
 import log from './log'
 
 class recognize {
-  constructor() {
+  constructor(deck) {
     this.cardNumber = 0;
     this.cardSide = true; //Language one is true, language two is false
-    this.deck = new Deck();
+    this.deck = JSON.parse(JSON.stringify(deck));
     this.log = new log();
   }
 

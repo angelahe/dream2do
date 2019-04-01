@@ -1,3 +1,7 @@
+/**
+ * Component to select a deck
+ */
+
 import React from 'react';
 
 const DeckSelector = () => {
