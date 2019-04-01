@@ -1,0 +1,35 @@
+{
+  "deck": {
+    "key": "4.1.7",
+    "desc": "animals",
+    "order": 30,
+    "cards": [
+      {
+        "key": 1,
+        "img": "dog.jpg",
+        "order": 1,
+        "en": {
+          "word": "dog",
+          "audio": "dog.mp3"
+        },
+        "es": {
+          "word": "el perro",
+          "audio": "dogES.mp3"
+        }
+      },
+      {
+        "key": 2,
+        "img": "cat.jpg",
+        "order": 2,
+        "en": {
+          "word": "dog",
+          "audio": "dog.mp3"
+        },
+        "es": {
+          "word": "el perro",
+          "audio": "dogES.mp3"
+        }
+      }
+    ]
+  }
+}
