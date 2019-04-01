@@ -50,7 +50,7 @@ class LevelSelector extends React.Component {
           <h1>Select Level</h1>
           <button onClick={this.handleClick}>Review</button>
           <button onClick={this.handleClick}>Recognize</button>
-          <button onClick={this.handleClick}>Produce</button>
+          <button onClick={this.handleClick} disabled={true}>Produce</button>
         </div>
       );
     }

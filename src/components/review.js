@@ -6,11 +6,13 @@
  *   @param {object} deck - Deck object
  */
 
+import Deck from './deck'
+
 class review {
   constructor(deck) {
     this.cardNumber = 0;
     this.cardSide = true; //Language one is true, language two is false
-    this.deck = JSON.parse(JSON.stringify(deck));
+    this.deck = (deck !== undefined) ? JSON.parse(JSON.stringify(deck)) : new Deck();
   }
 
   // Called when the next card button is pressed
