@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import FlashcardDeck from './components/FlashcardDeck';
 import Splash from './components/Splash'
+import { Row } from 'antd';
+import 'antd/dist/antd.css';
 
 class App extends React.Component {
 
@@ -20,14 +22,14 @@ class App extends React.Component {
   render() {
     return (
 
-      <main className="flashcardWrapper">
+      <Row>
         {this.state.appClicked
           ?
           <Splash handleClick={this.handleClick} />
           : <FlashcardDeck />
         }
 
-      </main>
+      </Row>
     );
   }
 }

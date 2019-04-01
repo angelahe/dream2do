@@ -8,49 +8,52 @@
 import React from 'react';
 import Level1Card from './Level1Card';
 import Level2Card from './Level2Card';
-
 import Deck from './deck';
+import { Row, Radio } from 'antd';
 
 class LevelSelector extends React.Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
       deck: new Deck(),
-      levelClicked:'',
+      levelClicked: '',
+      size: 'small'
     }
   }
 
   // get the text from the button and use that to select the correct level component
-  handleClick = (args) =>{
+  handleClick = (args) => {
     this.setState({
-      levelClicked:args.target.textContent.toLowerCase()
+      levelClicked: args
     })
   }
 
   clearLevel = () => {
     this.setState({
-      levelClicked:'',
+      levelClicked: '',
     })
   }
 
-  render(){
-    if(this.state.levelClicked === 'review'){
-      return(
-        <Level1Card clearLevel={this.clearLevel} currentDeck={this.state.deck}/>
+  render() {
+    if (this.state.levelClicked === 'review') {
+      return (
+        <Level1Card clearLevel={this.clearLevel} currentDeck={this.state.deck} />
       );
-    } else if (this.state.levelClicked === 'recognize'){
-      return(
-        <Level2Card clearLevel={this.clearLevel} currentDeck={this.state.deck}/>
+    } else if (this.state.levelClicked === 'recognize') {
+      return (
+        <Level2Card clearLevel={this.clearLevel} currentDeck={this.state.deck} />
       );
-    } else if (this.state.levelClicked === 'produce'){
+    } else if (this.state.levelClicked === 'produce') {
 
     } else {
-      return(
+      return (
         <div className="selectorWrapper">
           <h1>Select Level</h1>
-          <button onClick={this.handleClick}>Review</button>
-          <button onClick={this.handleClick}>Recognize</button>
-          <button onClick={this.handleClick} disabled={true}>Produce</button>
+          <Radio.Group value={this.state.size}>
+            <Radio.Button onClick={() => this.handleClick('review')}>Review</Radio.Button>
+            <Radio.Button onClick={() => this.handleClick('recognize')}>Recognize</Radio.Button>
+            <Radio.Button onClick={() => this.handleClick('#')}>#</Radio.Button>
+          </Radio.Group>
         </div>
       );
     }

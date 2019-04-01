@@ -1,7 +1,9 @@
 html, body {
+  box-sizing: border-box;
+}
+html, body, h1, h2 {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 #root {
@@ -54,10 +56,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-/* .cardImg {
-  height: 197px;
-} */
 
 .cardText {
   font-size: 30px;
