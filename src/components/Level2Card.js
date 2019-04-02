@@ -29,7 +29,7 @@ class Level2Card extends React.Component {
     } else {
       return (
         <div className="playCard">
-          <div className="cardImg"> Image</div>
+          <div className="cardImg" style={{backgroundImage:`url(${this.state.recognize.deck.cardHolder[this.state.currentCard].image})`}} />
           <div
             className="cardText">{(this.state.recognize.cardSide) ? this.state.recognize.deck.cardHolder[this.state.currentCard].textLanguageTwo
               : this.state.recognize.deck.cardHolder[this.state.currentCard].textLanguageOne}</div>
