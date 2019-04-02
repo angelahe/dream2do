@@ -27,13 +27,19 @@ class FlashcardDeck extends React.Component {
     })
   }
 
+  clearDeck = () => {
+    this.setState({
+      deckSelected: '',
+    })
+  }
+
   render() {
     return (
       <div className="flashCardDeck">
-        <StatusBar />
+        <StatusBar homeScreen={this.props.homeScreen} />
         {(this.state.deckSelected === '') ? <DeckSelector data={Decks} clicked={this.deckClicked}/> : null}
         {(this.state.deckSelected !== '') ? <LevelSelector {...this.state} langOne={this.props.languageOne} langTwo={this.props.languageTwo}/> : null}
-        <NavBar />
+        <NavBar deckSelected={this.state.deckSelected} clearDeck={this.clearDeck} />
       </div>
     );
   }
