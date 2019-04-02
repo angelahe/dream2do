@@ -60,6 +60,9 @@ main {
 .cardImg {
   width: 350px;
   height: 350px;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
 }
 
 .cardText {
