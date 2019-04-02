@@ -28,6 +28,12 @@ class App extends React.Component {
     }
   }
 
+  homeScreen = () => {
+    this.setState({
+      appClicked: true,
+    })
+  }
+
   render() {
     return (
 
@@ -35,7 +41,7 @@ class App extends React.Component {
         {this.state.appClicked
           ?
           <Splash handleClick={this.handleClick} />
-          : <FlashcardDeck {...this.state}/>
+          : <FlashcardDeck {...this.state} homeScreen={this.homeScreen}/>
         }
 
       </Row>
