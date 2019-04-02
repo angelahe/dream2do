@@ -8,6 +8,7 @@
 import React from 'react';
 import review from './review';
 import { Icon } from 'antd';
+import Sound from 'react-sound';
 
 class Level1Card extends React.Component {
   constructor(props) {
@@ -15,6 +16,7 @@ class Level1Card extends React.Component {
     this.state = {
       review: new review(this.props.currentDeck),
       currentCard: 0,
+      playStatus:Sound.status.STOPPED,
     }
   }
 
@@ -26,6 +28,12 @@ class Level1Card extends React.Component {
     this.setState({
       review: newReview,
       currentCard: this.state.review.cardNumber,
+    })
+  }
+
+  playAudio = () => {
+    this.setState({
+      playStatus:Sound.status.PLAYING,
     })
   }
 
@@ -57,7 +65,11 @@ class Level1Card extends React.Component {
                   this.setState({ currentCard: this.state.review.cardNumber })
                 }} type="step-backward" />
             }
-            <Icon style={{ fontSize: '32px' }} onClick={() => this.state.review.playAudio()} type="sound" />
+            <Icon style={{ fontSize: '32px' }} onClick={() => this.playAudio()} type="sound" />
+            <Sound
+              url={(this.state.review.cardSide)?this.state.review.deck.cardHolder[this.state.currentCard].audioLanguageTwo:this.state.review.deck.cardHolder[this.state.currentCard].audioLanguageOne}
+              playStatus={this.state.playStatus}
+            />
 
             <Icon style={{ fontSize: '32px' }} onClick={() => {
               this.state.review.handleNextClick();

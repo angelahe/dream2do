@@ -38,7 +38,7 @@ class LevelSelector extends React.Component {
   render() {
     if (this.state.levelClicked === 'review') {
       return (
-        <Level1Card clearLevel={this.clearLevel} currentDeck={this.state.deck} />
+        <Level1Card clearLevel={this.clearLevel} currentDeck={this.state.deck} ref={(v) => console.log(v)}/>
       );
     } else if (this.state.levelClicked === 'recognize') {
       return (
