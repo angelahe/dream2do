@@ -15,6 +15,10 @@
         "es": {
           "word": "el oso",
           "audio": "../audio/bearES.mp3"
+        },
+        "fr": {
+          "word": "l'ours",
+          "audio": "../audio/bearFR.mp3"
         }
       },
       {
@@ -28,6 +32,10 @@
         "es": {
           "word": "el gato",
           "audio": "../audio/catES.mp3"
+        },
+        "fr": {
+          "word": "le chat",
+          "audio": "../audio/catFR.mp3"
         }
       },
       {
@@ -41,6 +49,10 @@
         "es": {
           "word": "el pez",
           "audio": "../audio/fishES.mp3"
+        },
+        "fr": {
+          "word": "le poisson",
+          "audio": "../audio/fishFR.mp3"
         }
       },
       {
@@ -54,6 +66,10 @@
         "es": {
           "word": "el perro",
           "audio": "../audio/dogES.mp3"
+        },
+        "fr": {
+          "word": "le chien",
+          "audio": "../audio/dogFR.mp3"
         }
       },
       {
@@ -67,6 +83,10 @@
         "es": {
           "word": "el pájaro",
           "audio": "../audio/birdES.mp3"
+        },
+        "fr": {
+          "word": "l'oiseau",
+          "audio": "../audio/birdFR.mp3"
         }
       },
       {
@@ -80,6 +100,10 @@
         "es": {
           "word": "el caballo",
           "audio": "../audio/horseES.mp3"
+        },
+        "fr": {
+          "word": "le cheval",
+          "audio": "../audio/horseFR.mp3"
         }
       },
       {
@@ -93,6 +117,10 @@
         "es": {
           "word": "la vaca",
           "audio": "../audio/cowES.mp3"
+        },
+        "fr": {
+          "word": "la vache",
+          "audio": "../audio/cowFR.mp3"
         }
       },
       {
@@ -106,6 +134,10 @@
         "es": {
           "word": "la gallina",
           "audio": "../audio/chickenES.mp3"
+        },
+        "fr": {
+          "word": "le poulet",
+          "audio": "../audio/chickenFR.mp3"
         }
       },
       {
@@ -119,6 +151,10 @@
         "es": {
           "word": "el cerdo",
           "audio": "../audio/pigES.mp3"
+        },
+        "fr": {
+          "word": "le cochon",
+          "audio": "../audio/pigFR.mp3"
         }
       },
       {
@@ -132,12 +168,15 @@
         "es": {
           "word": "el lobo",
           "audio": "../audio/wolfES.mp3"
+        },
+        "fr": {
+          "word": "le loup",
+          "audio": "../audio/wolfFR.mp3"
         }
       }
     ]
   }
 },
-  // END OF FIRST DECK
   {
     "deck": {
       "key": "2.1.5",
@@ -155,6 +194,10 @@
           "es": {
             "word": "los colores",
             "audio": "../audio/coloursES.mp3"
+          },
+          "fr": {
+            "word": "les couleurs",
+            "audio": "../audio/coloursFR.mp3"
           }
         },
         {
@@ -168,6 +211,10 @@
           "es": {
             "word": "negro",
             "audio": "../audio/blackES.mp3"
+          },
+          "fr": {
+            "word": "noir",
+            "audio": "../audio/blackFR.mp3"
           }
         },
         {
@@ -181,6 +228,10 @@
           "es": {
             "word": "blanco",
             "audio": "../audio/whiteES.mp3"
+          },
+          "fr": {
+            "word": "blanc",
+            "audio": "../audio/whiteFR.mp3"
           }
         },
         {
@@ -194,6 +245,10 @@
           "es": {
             "word": "rojo",
             "audio": "../audio/redES.mp3"
+          },
+          "fr": {
+            "word": "rouge",
+            "audio": "../audio/redFR.mp3"
           }
         },
         {
@@ -207,6 +262,10 @@
           "es": {
             "word": "verde",
             "audio": "../audio/greenES.mp3"
+          },
+          "fr": {
+            "word": "vert",
+            "audio": "../audio/greenFR.mp3"
           }
         },
         {
@@ -220,6 +279,10 @@
           "es": {
             "word": "azul",
             "audio": "../audio/blueES.mp3"
+          },
+          "fr": {
+            "word": "bleu",
+            "audio": "../audio/blueFR.mp3"
           }
         },
         {
@@ -233,6 +296,10 @@
           "es": {
             "word": "amarillo",
             "audio": "../audio/yellowES.mp3"
+          },
+          "fr": {
+            "word": "jaune",
+            "audio": "../audio/yellowFR.mp3"
           }
         },
         {
@@ -246,6 +313,10 @@
           "es": {
             "word": "gris",
             "audio": "../audio/greyES.mp3"
+          },
+          "fr": {
+            "word": "gris",
+            "audio": "../audio/greyFR.mp3"
           }
         },
         {
@@ -259,6 +330,10 @@
           "es": {
             "word": "marrón",
             "audio": "../audio/brownES.mp3"
+          },
+          "fr": {
+            "word": "marron",
+            "audio": "../audio/brownFR.mp3"
           }
         },
         {
@@ -272,12 +347,15 @@
           "es": {
             "word": "morado",
             "audio": "../audio/purpleES.mp3"
+          },
+          "fr": {
+            "word": "violet",
+            "audio": "../audio/FR.mp3"
           }
         }
       ]
     }
   },
-  // end of second deck
   {
     "deck": {
       "key": "1.2.4",
@@ -295,6 +373,10 @@
           "es": {
             "word": "uno",
             "audio": "../audio/oneES.mp3"
+          },
+          "fr": {
+            "word": "un",
+            "audio": "../audio/oneFR.mp3"
           }
         },
         {
@@ -308,6 +390,10 @@
           "es": {
             "word": "dos",
             "audio": "../audio/dosES.mp3"
+          },
+          "fr": {
+            "word": "deux",
+            "audio": "../audio/twoFR.mp3"
           }
         },
         {
@@ -321,6 +407,10 @@
           "es": {
             "word": "tres",
             "audio": "../audio/threeES.mp3"
+          },
+          "fr": {
+            "word": "trois",
+            "audio": "../audio/threeFR.mp3"
           }
         },
         {
@@ -334,6 +424,10 @@
           "es": {
             "word": "cuatro",
             "audio": "../audio/fourES.mp3"
+          },
+          "fr": {
+            "word": "quatre",
+            "audio": "../audio/fourFR.mp3"
           }
         },
         {
@@ -347,6 +441,10 @@
           "es": {
             "word": "cinco",
             "audio": "../audio/fiveES.mp3"
+          },
+          "fr": {
+            "word": "cinq",
+            "audio": "../audio/fiveFR.mp3"
           }
         },
         {
@@ -360,6 +458,10 @@
           "es": {
             "word": "seis",
             "audio": "../audio/sixES.mp3"
+          },
+          "fr": {
+            "word": "six",
+            "audio": "../audio/sixFR.mp3"
           }
         },
         {
@@ -373,6 +475,10 @@
           "es": {
             "word": "siete",
             "audio": "../audio/sevenES.mp3"
+          },
+          "fr": {
+            "word": "sept",
+            "audio": "../audio/sevenFR.mp3"
           }
         },
         {
@@ -386,6 +492,10 @@
           "es": {
             "word": "ocho",
             "audio": "../audio/eightES.mp3"
+          },
+          "fr": {
+            "word": "huit",
+            "audio": "../audio/eightFR.mp3"
           }
         },
         {
@@ -399,6 +509,10 @@
           "es": {
             "word": "nueve",
             "audio": "../audio/nineES.mp3"
+          },
+          "fr": {
+            "word": "neuf",
+            "audio": "../audio/nineFR.mp3"
           }
         },
         {
@@ -411,7 +525,11 @@
           },
           "es": {
             "word": "diez",
-            "audio": "t../audio/en,ES.mp3"
+            "audio": "../audio/tenES.mp3"
+          },
+          "fr": {
+            "word": "dix",
+            "audio": "../audio/tenFR.mp3"
           }
         }
       ]
