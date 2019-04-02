@@ -12,10 +12,10 @@ import Deck from './deck';
 import { Row, Radio } from 'antd';
 
 class LevelSelector extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      deck: new Deck(),
+      deck: new Deck(this.props.deckSelected),
       levelClicked: '',
       size: 'small'
     }

@@ -7,7 +7,7 @@
 import Card from './card';
 import Decks from '../data/second';
 
-console.log("Decks is", Decks);
+// console.log("Decks is", Decks);
 class Deck {
   constructor(deckNumber = 1, languageOne = 'en', languageTwo = 'fr') {
     
