@@ -1,3 +1,8 @@
+@fontface {
+  font-family: 'Kalam', cursive, Arial;
+  src: url('https://fonts.googleapis.com/css?family=Kalam')
+}
+
 .App {
   text-align: center;
 }
@@ -30,4 +35,50 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#ant-row {
+  height: 621px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #61dafb;
+}
+
+.spacing {
+  display: flex;
+  flex-direction: column;
+}
+
+.spacing > * {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.spacing > button {
+  margin-top: 10px;
+  text-align: center;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+  height: 43px;
+}
+
+button {
+  font-size: 1.2em;
+}
+
+.spacing > input {
+  font-size: 1.4em;
+}
+
+button:hover {
+  border: whitesmoke solid 2px;
+}
+
+.spacing > .title {
+ font-family: 'Kalam';
+ font-size: 2em;
 }

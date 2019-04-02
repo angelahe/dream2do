@@ -6,15 +6,10 @@ import React from 'react'
 
 const Splash = (props) => {
   return (
-    <div>
-      <div> Hello world from app</div>
-      <div>
-        <input type="text" placeholder="email" required />
-      </div>
+    <div className="spacing">
+      <div className="title">Welcome to Dream2do</div>
+      <input type="text" placeholder="email" required />
       <button onClick={props.handleClick}>Go to Flashcards</button><br />
-
-
-      {/* <input type="text" placeholder="" required /> */}
     </div>
   )
 }
