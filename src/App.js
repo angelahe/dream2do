@@ -37,7 +37,7 @@ class App extends React.Component {
   render() {
     return (
 
-      <Row>
+      <Row id='ant-row'>
         {this.state.appClicked
           ?
           <Splash handleClick={this.handleClick} />
