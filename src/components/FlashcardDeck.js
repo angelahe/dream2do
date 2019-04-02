@@ -9,6 +9,7 @@ import LevelSelector from './LevelSelector';
 import DeckSelector from './DeckSelector';
 import StatusBar from './StatusBar';
 import NavBar from './NavBar';
+import Decks from '../data/second';
 
 import './Flashcard.css'
 
@@ -16,15 +17,21 @@ class FlashcardDeck extends React.Component {
   constructor() {
     super();
     this.state = {
-      deckSelected: 'test',
+      deckSelected: '',
     }
+  }
+
+  deckClicked = (args) => {
+    this.setState({
+      deckSelected:args.target.id.replace(/\D/g,''),
+    })
   }
 
   render() {
     return (
       <div className="flashCardDeck">
         <StatusBar />
-        {(this.state.deckSelected === '') ? <DeckSelector /> : null}
+        {(this.state.deckSelected === '') ? <DeckSelector data={Decks} clicked={this.deckClicked}/> : null}
         {(this.state.deckSelected !== '') ? <LevelSelector {...this.state} /> : null}
         <NavBar />
       </div>
