@@ -11,12 +11,21 @@ class App extends React.Component {
     super();
     this.state = {
       appClicked: true,
-      message: ""
+      message: "",
+      languageOne: '',
+      languageTwo: '',
     }
   }
 
-  handleClick = () => {
-    this.setState({ appClicked: false });
+  handleClick = (e) => {
+    // console.log(e.target.parentNode.children[5])
+    if(e.target.parentNode.children[0].value !== '' && e.target.parentNode.children[1].value !== ''){
+      this.setState({ 
+        appClicked: false,
+        languageOne:e.target.parentNode.children[3].value,
+        languageTwo:e.target.parentNode.children[5].value,
+      });
+    }
   }
 
   render() {
@@ -26,7 +35,7 @@ class App extends React.Component {
         {this.state.appClicked
           ?
           <Splash handleClick={this.handleClick} />
-          : <FlashcardDeck />
+          : <FlashcardDeck {...this.state}/>
         }
 
       </Row>
