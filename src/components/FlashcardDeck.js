@@ -14,8 +14,8 @@ import Decks from '../data/second';
 import './Flashcard.css'
 
 class FlashcardDeck extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       deckSelected: '',
     }
@@ -32,7 +32,7 @@ class FlashcardDeck extends React.Component {
       <div className="flashCardDeck">
         <StatusBar />
         {(this.state.deckSelected === '') ? <DeckSelector data={Decks} clicked={this.deckClicked}/> : null}
-        {(this.state.deckSelected !== '') ? <LevelSelector {...this.state} /> : null}
+        {(this.state.deckSelected !== '') ? <LevelSelector {...this.state} langOne={this.props.languageOne} langTwo={this.props.languageTwo}/> : null}
         <NavBar />
       </div>
     );

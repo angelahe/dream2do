@@ -15,7 +15,7 @@ class LevelSelector extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      deck: new Deck(this.props.deckSelected),
+      deck: new Deck(this.props.deckSelected, this.props.langOne, this.props.langTwo),
       levelClicked: '',
       size: 'small'
     }
