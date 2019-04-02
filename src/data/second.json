@@ -6,172 +6,172 @@
     "cards": [
       {
         "key": 1817,
-        "img": "../img/bear.jpg",
+        "img": "/img/bear.png",
         "order": 1,
         "en": {
           "word": "the bear",
-          "audio": "../audio/bearEN.mp3"
+          "audio": "/audio/bearEN.mp3"
         },
         "es": {
           "word": "el oso",
-          "audio": "../audio/bearES.mp3"
+          "audio": "/audio/bearES.mp3"
         },
         "fr": {
           "word": "l'ours",
-          "audio": "../audio/bearFR.mp3"
+          "audio": "/audio/bearFR.mp3"
         }
       },
       {
         "key": 1122,
-        "img": "../img/cat.jpg",
+        "img": "/img/cat.png",
         "order": 2,
         "en": {
           "word": "the cat",
-          "audio": "../audio/catEN.mp3"
+          "audio": "/audio/catEN.mp3"
         },
         "es": {
           "word": "el gato",
-          "audio": "../audio/catES.mp3"
+          "audio": "/audio/catES.mp3"
         },
         "fr": {
           "word": "le chat",
-          "audio": "../audio/catFR.mp3"
+          "audio": "/audio/catFR.mp3"
         }
       },
       {
         "key": 4074,
-        "img": "../img/fish.jpg",
+        "img": "/img/fish.png",
         "order": 3,
         "en": {
           "word": "the fish",
-          "audio": "../audio/fishEN.mp3"
+          "audio": "/audio/fishEN.mp3"
         },
         "es": {
           "word": "el pez",
-          "audio": "../audio/fishES.mp3"
+          "audio": "/audio/fishES.mp3"
         },
         "fr": {
           "word": "le poisson",
-          "audio": "../audio/fishFR.mp3"
+          "audio": "/audio/fishFR.mp3"
         }
       },
       {
         "key": 932,
-        "img": "../img/dog.jpg",
+        "img": "/img/dog.png",
         "order": 4,
         "en": {
           "word": "the dog",
-          "audio": "../audio/dogEN.mp3"
+          "audio": "/audio/dogEN.mp3"
         },
         "es": {
           "word": "el perro",
-          "audio": "../audio/dogES.mp3"
+          "audio": "/audio/dogES.mp3"
         },
         "fr": {
           "word": "le chien",
-          "audio": "../audio/dogFR.mp3"
+          "audio": "/audio/dogFR.mp3"
         }
       },
       {
         "key": 1632,
-        "img": "../img/bird.jpg",
+        "img": "/img/bird.png",
         "order": 5,
         "en": {
           "word": "the bird",
-          "audio": "../audio/birdEN.mp3"
+          "audio": "/audio/birdEN.mp3"
         },
         "es": {
           "word": "el pájaro",
-          "audio": "../audio/birdES.mp3"
+          "audio": "/audio/birdES.mp3"
         },
         "fr": {
           "word": "l'oiseau",
-          "audio": "../audio/birdFR.mp3"
+          "audio": "/audio/birdFR.mp3"
         }
       },
       {
         "key": 752,
-        "img": "../img/horse.jpg",
+        "img": "/img/horse.png",
         "order": 6,
         "en": {
           "word": "the horse",
-          "audio": "../audio/horseEN.mp3"
+          "audio": "/audio/horseEN.mp3"
         },
         "es": {
           "word": "el caballo",
-          "audio": "../audio/horseES.mp3"
+          "audio": "/audio/horseES.mp3"
         },
         "fr": {
           "word": "le cheval",
-          "audio": "../audio/horseFR.mp3"
+          "audio": "/audio/horseFR.mp3"
         }
       },
       {
         "key": 5207,
-        "img": "../img/cow.jpg",
+        "img": "/img/cow.png",
         "order": 7,
         "en": {
           "word": "the cow",
-          "audio": "../audio/cowEN.mp3"
+          "audio": "/audio/cowEN.mp3"
         },
         "es": {
           "word": "la vaca",
-          "audio": "../audio/cowES.mp3"
+          "audio": "/audio/cowES.mp3"
         },
         "fr": {
           "word": "la vache",
-          "audio": "../audio/cowFR.mp3"
+          "audio": "/audio/cowFR.mp3"
         }
       },
       {
         "key": 5582,
-        "img": "../img/chicken.jpg",
+        "img": "/img/chicken.png",
         "order": 8,
         "en": {
           "word": "the chicken",
-          "audio": "../audio/chickenEN.mp3"
+          "audio": "/audio/chickenEN.mp3"
         },
         "es": {
           "word": "la gallina",
-          "audio": "../audio/chickenES.mp3"
+          "audio": "/audio/chickenES.mp3"
         },
         "fr": {
           "word": "le poulet",
-          "audio": "../audio/chickenFR.mp3"
+          "audio": "/audio/chickenFR.mp3"
         }
       },
       {
         "key": 3775,
-        "img": "../img/pig.jpg",
+        "img": "/img/pig.png",
         "order": 9,
         "en": {
           "word": "the pig",
-          "audio": "../audio/pig.mp3"
+          "audio": "/audio/pig.mp3"
         },
         "es": {
           "word": "el cerdo",
-          "audio": "../audio/pigES.mp3"
+          "audio": "/audio/pigES.mp3"
         },
         "fr": {
           "word": "le cochon",
-          "audio": "../audio/pigFR.mp3"
+          "audio": "/audio/pigFR.mp3"
         }
       },
       {
         "key": 1514,
-        "img": "../img/wolf.jpg",
+        "img": "/img/wolf.png",
         "order": 10,
         "en": {
           "word": "the wolf",
-          "audio": "../audio/wolfEN.mp3"
+          "audio": "/audio/wolfEN.mp3"
         },
         "es": {
           "word": "el lobo",
-          "audio": "../audio/wolfES.mp3"
+          "audio": "/audio/wolfES.mp3"
         },
         "fr": {
           "word": "le loup",
-          "audio": "../audio/wolfFR.mp3"
+          "audio": "/audio/wolfFR.mp3"
         }
       }
     ]
@@ -185,172 +185,172 @@
       "cards": [
         {
           "key": 336,
-          "img": "../img/colours.jpg",
+          "img": "/img/colours.png",
           "order": 1,
           "en": {
             "word": "colours",
-            "audio": "../audio/coloursEN.mp3"
+            "audio": "/audio/coloursEN.mp3"
           },
           "es": {
             "word": "los colores",
-            "audio": "../audio/coloursES.mp3"
+            "audio": "/audio/coloursES.mp3"
           },
           "fr": {
             "word": "les couleurs",
-            "audio": "../audio/coloursFR.mp3"
+            "audio": "/audio/coloursFR.mp3"
           }
         },
         {
           "key": 429,
-          "img": "black.jpg",
+          "img": "black.png",
           "order": 2,
           "en": {
             "word": "black",
-            "audio": "../audio/blackEN.mp3"
+            "audio": "/audio/blackEN.mp3"
           },
           "es": {
             "word": "negro",
-            "audio": "../audio/blackES.mp3"
+            "audio": "/audio/blackES.mp3"
           },
           "fr": {
             "word": "noir",
-            "audio": "../audio/blackFR.mp3"
+            "audio": "/audio/blackFR.mp3"
           }
         },
         {
           "key": 428,
-          "img": "../img/white.jpg",
+          "img": "/img/white.png",
           "order": 3,
           "en": {
             "word": "white",
-            "audio": "../audio/whiteEN.mp3"
+            "audio": "/audio/whiteEN.mp3"
           },
           "es": {
             "word": "blanco",
-            "audio": "../audio/whiteES.mp3"
+            "audio": "/audio/whiteES.mp3"
           },
           "fr": {
             "word": "blanc",
-            "audio": "../audio/whiteFR.mp3"
+            "audio": "/audio/whiteFR.mp3"
           }
         },
         {
           "key": 681,
-          "img": "../img/red.jpg",
+          "img": "/img/red.png",
           "order": 4,
           "en": {
             "word": "red",
-            "audio": "../audio/redEN.mp3"
+            "audio": "/audio/redEN.mp3"
           },
           "es": {
             "word": "rojo",
-            "audio": "../audio/redES.mp3"
+            "audio": "/audio/redES.mp3"
           },
           "fr": {
             "word": "rouge",
-            "audio": "../audio/redFR.mp3"
+            "audio": "/audio/redFR.mp3"
           }
         },
         {
           "key": 636,
-          "img": "../img/green.jpg",
+          "img": "/img/green.png",
           "order": 5,
           "en": {
             "word": "green",
-            "audio": "../audio/greenEN.mp3"
+            "audio": "/audio/greenEN.mp3"
           },
           "es": {
             "word": "verde",
-            "audio": "../audio/greenES.mp3"
+            "audio": "/audio/greenES.mp3"
           },
           "fr": {
             "word": "vert",
-            "audio": "../audio/greenFR.mp3"
+            "audio": "/audio/greenFR.mp3"
           }
         },
         {
           "key": 570,
-          "img": "../img/blue.jpg",
+          "img": "/img/blue.png",
           "order": 6,
           "en": {
             "word": "blue",
-            "audio": "../audio/blueEN.mp3"
+            "audio": "/audio/blueEN.mp3"
           },
           "es": {
             "word": "azul",
-            "audio": "../audio/blueES.mp3"
+            "audio": "/audio/blueES.mp3"
           },
           "fr": {
             "word": "bleu",
-            "audio": "../audio/blueFR.mp3"
+            "audio": "/audio/blueFR.mp3"
           }
         },
         {
           "key": 2497,
-          "img": "../img/yellow.jpg",
+          "img": "/img/yellow.png",
           "order": 7,
           "en": {
             "word": "yellow",
-            "audio": "../audio/yellowEN.mp3"
+            "audio": "/audio/yellowEN.mp3"
           },
           "es": {
             "word": "amarillo",
-            "audio": "../audio/yellowES.mp3"
+            "audio": "/audio/yellowES.mp3"
           },
           "fr": {
             "word": "jaune",
-            "audio": "../audio/yellowFR.mp3"
+            "audio": "/audio/yellowFR.mp3"
           }
         },
         {
           "key": 762,
-          "img": "../img/grey.jpg",
+          "img": "/img/grey.png",
           "order": 8,
           "en": {
             "word": "grey",
-            "audio": "../audio/greyEN.mp3"
+            "audio": "/audio/greyEN.mp3"
           },
           "es": {
             "word": "gris",
-            "audio": "../audio/greyES.mp3"
+            "audio": "/audio/greyES.mp3"
           },
           "fr": {
             "word": "gris",
-            "audio": "../audio/greyFR.mp3"
+            "audio": "/audio/greyFR.mp3"
           }
         },
         {
           "key": 2157,
-          "img": "../img/brown.jpg",
+          "img": "/img/brown.png",
           "order": 9,
           "en": {
             "word": "brown",
-            "audio": "../audio/brownEN.mp3"
+            "audio": "/audio/brownEN.mp3"
           },
           "es": {
             "word": "marrón",
-            "audio": "../audio/brownES.mp3"
+            "audio": "/audio/brownES.mp3"
           },
           "fr": {
             "word": "marron",
-            "audio": "../audio/brownFR.mp3"
+            "audio": "/audio/brownFR.mp3"
           }
         },
         {
           "key": 5594,
-          "img": "../img/purple.jpg",
+          "img": "/img/purple.png",
           "order": 10,
           "en": {
             "word": "purple",
-            "audio": "../audio/purpleEN.mp3"
+            "audio": "/audio/purpleEN.mp3"
           },
           "es": {
             "word": "morado",
-            "audio": "../audio/purpleES.mp3"
+            "audio": "/audio/purpleES.mp3"
           },
           "fr": {
             "word": "violet",
-            "audio": "../audio/FR.mp3"
+            "audio": "/audio/FR.mp3"
           }
         }
       ]
@@ -364,172 +364,172 @@
       "cards": [
         {
           "key": 92,
-          "img": "../img/one.jpg",
+          "img": "/img/one.png",
           "order": 1,
           "en": {
             "word": "one",
-            "audio": "../audio/oneEN.mp3"
+            "audio": "/audio/oneEN.mp3"
           },
           "es": {
             "word": "uno",
-            "audio": "../audio/oneES.mp3"
+            "audio": "/audio/oneES.mp3"
           },
           "fr": {
             "word": "un",
-            "audio": "../audio/oneFR.mp3"
+            "audio": "/audio/oneFR.mp3"
           }
         },
         {
           "key": 59,
-          "img": "../img/two.jpg",
+          "img": "/img/two.png",
           "order": 2,
           "en": {
             "word": "two",
-            "audio": "../audio/twoEN.mp3"
+            "audio": "/audio/twoEN.mp3"
           },
           "es": {
             "word": "dos",
-            "audio": "../audio/dosES.mp3"
+            "audio": "/audio/dosES.mp3"
           },
           "fr": {
             "word": "deux",
-            "audio": "../audio/twoFR.mp3"
+            "audio": "/audio/twoFR.mp3"
           }
         },
         {
           "key": 174,
-          "img": "../img/three.jpg",
+          "img": "/img/three.png",
           "order": 3,
           "en": {
             "word": "three",
-            "audio": "../audio/threeEN.mp3"
+            "audio": "/audio/threeEN.mp3"
           },
           "es": {
             "word": "tres",
-            "audio": "../audio/threeES.mp3"
+            "audio": "/audio/threeES.mp3"
           },
           "fr": {
             "word": "trois",
-            "audio": "../audio/threeFR.mp3"
+            "audio": "/audio/threeFR.mp3"
           }
         },
         {
           "key": 372,
-          "img": "../img/four.jpg",
+          "img": "/img/four.png",
           "order": 4,
           "en": {
             "word": "four",
-            "audio": "../audio/fourEN.mp3"
+            "audio": "/audio/fourEN.mp3"
           },
           "es": {
             "word": "cuatro",
-            "audio": "../audio/fourES.mp3"
+            "audio": "/audio/fourES.mp3"
           },
           "fr": {
             "word": "quatre",
-            "audio": "../audio/fourFR.mp3"
+            "audio": "/audio/fourFR.mp3"
           }
         },
         {
           "key": 442,
-          "img": "../img/five.jpg",
+          "img": "/img/five.png",
           "order": 5,
           "en": {
             "word": "five",
-            "audio": "../audio/fiveEN.mp3"
+            "audio": "/audio/fiveEN.mp3"
           },
           "es": {
             "word": "cinco",
-            "audio": "../audio/fiveES.mp3"
+            "audio": "/audio/fiveES.mp3"
           },
           "fr": {
             "word": "cinq",
-            "audio": "../audio/fiveFR.mp3"
+            "audio": "/audio/fiveFR.mp3"
           }
         },
         {
           "key": 667,
-          "img": "../img/six.jpg",
+          "img": "/img/six.png",
           "order": 6,
           "en": {
             "word": "six",
-            "audio": "../audio/sixEN.mp3"
+            "audio": "/audio/sixEN.mp3"
           },
           "es": {
             "word": "seis",
-            "audio": "../audio/sixES.mp3"
+            "audio": "/audio/sixES.mp3"
           },
           "fr": {
             "word": "six",
-            "audio": "../audio/sixFR.mp3"
+            "audio": "/audio/sixFR.mp3"
           }
         },
         {
           "key": 963,
-          "img": "../img/seven.jpg",
+          "img": "/img/seven.png",
           "order": 7,
           "en": {
             "word": "seven",
-            "audio": "../audio/sevenEN.mp3"
+            "audio": "/audio/sevenEN.mp3"
           },
           "es": {
             "word": "siete",
-            "audio": "../audio/sevenES.mp3"
+            "audio": "/audio/sevenES.mp3"
           },
           "fr": {
             "word": "sept",
-            "audio": "../audio/sevenFR.mp3"
+            "audio": "/audio/sevenFR.mp3"
           }
         },
         {
           "key": 1203,
-          "img": "../img/eight.jpg",
+          "img": "/img/eight.png",
           "order": 8,
           "en": {
             "word": "eight",
-            "audio": "../audio/eightEN.mp3"
+            "audio": "/audio/eightEN.mp3"
           },
           "es": {
             "word": "ocho",
-            "audio": "../audio/eightES.mp3"
+            "audio": "/audio/eightES.mp3"
           },
           "fr": {
             "word": "huit",
-            "audio": "../audio/eightFR.mp3"
+            "audio": "/audio/eightFR.mp3"
           }
         },
         {
           "key": 1547,
-          "img": "../img/nine.jpg",
+          "img": "/img/nine.png",
           "order": 9,
           "en": {
             "word": "nine",
-            "audio": "../audio/nineEN.mp3"
+            "audio": "/audio/nineEN.mp3"
           },
           "es": {
             "word": "nueve",
-            "audio": "../audio/nineES.mp3"
+            "audio": "/audio/nineES.mp3"
           },
           "fr": {
             "word": "neuf",
-            "audio": "../audio/nineFR.mp3"
+            "audio": "/audio/nineFR.mp3"
           }
         },
         {
           "key": 547,
-          "img": "../img/ten.jpg",
+          "img": "/img/ten.png",
           "order": 10,
           "en": {
             "word": "ten",
-            "audio": "../audio/tenEN.mp3"
+            "audio": "/audio/tenEN.mp3"
           },
           "es": {
             "word": "diez",
-            "audio": "../audio/tenES.mp3"
+            "audio": "/audio/tenES.mp3"
           },
           "fr": {
             "word": "dix",
-            "audio": "../audio/tenFR.mp3"
+            "audio": "/audio/tenFR.mp3"
           }
         }
       ]

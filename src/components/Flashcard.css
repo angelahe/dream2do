@@ -57,6 +57,11 @@ main {
   align-items: center;
 }
 
+.cardImg {
+  width: 350px;
+  height: 350px;
+}
+
 .cardText {
   font-size: 30px;
   height: 100px;
