@@ -25,6 +25,23 @@ main {
   margin-top: 10px;
 }
 
+.flashCardDeck {
+  width: 350px;
+}
+
+
+
+.selectorWrapper + .navBar {
+  position: relative;
+    top: 20px;
+    left: 0px;
+}
+
+.statusBar {
+  position: relative;
+  top: -20px;
+}
+
 .navBar, .statusBar {
   display:flex;
   justify-content: center;
@@ -57,6 +74,14 @@ main {
   align-items: center;
 }
 
+.cardImg {
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+}
+
 .cardText {
   font-size: 30px;
   height: 100px;
@@ -74,5 +99,9 @@ main {
 
 .audioBtn, .navBtn, .cardImg  {
   background-color: #61dafb;
+}
+
+.flashCardDeck > .navBar > h2, .flashCardDeck > .statusBar > h1 {
+  margin-bottom: 0;
 }
 

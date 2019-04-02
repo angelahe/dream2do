@@ -9,24 +9,37 @@ import LevelSelector from './LevelSelector';
 import DeckSelector from './DeckSelector';
 import StatusBar from './StatusBar';
 import NavBar from './NavBar';
+import Decks from '../data/second';
 
 import './Flashcard.css'
 
 class FlashcardDeck extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      deckSelected: 'test',
+      deckSelected: '',
     }
+  }
+
+  deckClicked = (args) => {
+    this.setState({
+      deckSelected:args.target.id.replace(/\D/g,''),
+    })
+  }
+
+  clearDeck = () => {
+    this.setState({
+      deckSelected: '',
+    })
   }
 
   render() {
     return (
       <div className="flashCardDeck">
-        <StatusBar />
-        {(this.state.deckSelected === '') ? <DeckSelector /> : null}
-        {(this.state.deckSelected !== '') ? <LevelSelector {...this.state} /> : null}
-        <NavBar />
+        <StatusBar homeScreen={this.props.homeScreen} />
+        {(this.state.deckSelected === '') ? <DeckSelector data={Decks} clicked={this.deckClicked}/> : null}
+        {(this.state.deckSelected !== '') ? <LevelSelector {...this.state} langOne={this.props.languageOne} langTwo={this.props.languageTwo}/> : null}
+        <NavBar deckSelected={this.state.deckSelected} clearDeck={this.clearDeck} />
       </div>
     );
   }

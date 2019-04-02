@@ -9,13 +9,14 @@ import React from 'react';
 import Level1Card from './Level1Card';
 import Level2Card from './Level2Card';
 import Deck from './deck';
-import { Row, Radio } from 'antd';
+import { Radio, Icon } from 'antd';
+import './LevelSelector.css'
 
 class LevelSelector extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      deck: new Deck(),
+      deck: new Deck(this.props.deckSelected, this.props.langOne, this.props.langTwo),
       levelClicked: '',
       size: 'small'
     }
@@ -48,11 +49,11 @@ class LevelSelector extends React.Component {
     } else {
       return (
         <div className="selectorWrapper">
-          <h1>Select Level</h1>
+          <h1 className="theangela">Select Level</h1>
           <Radio.Group value={this.state.size}>
-            <Radio.Button onClick={() => this.handleClick('review')}>Review</Radio.Button>
-            <Radio.Button onClick={() => this.handleClick('recognize')}>Recognize</Radio.Button>
-            <Radio.Button onClick={() => this.handleClick('#')}>#</Radio.Button>
+            <Radio.Button onClick={() => this.handleClick('review')}><Icon type="eye" /></Radio.Button>
+            <Radio.Button onClick={() => this.handleClick('recognize')}><Icon type="book" /></Radio.Button>
+            <Radio.Button onClick={() => this.handleClick('#')}><Icon type="highlight" /></Radio.Button>
           </Radio.Group>
         </div>
       );

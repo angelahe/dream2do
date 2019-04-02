@@ -44,7 +44,7 @@ class Level1Card extends React.Component {
     } else {
       return (
         <div className="playCard">
-          <img alt={this.state.review.deck.cardHolder[this.state.currentCard].textLanguageOne} className="cardImg" key={this.state.currentCard} src={this.state.review.deck.cardHolder[this.state.currentCard].image} />
+          <div className="cardImg" style={{backgroundImage:`url(${this.state.review.deck.cardHolder[this.state.currentCard].image})`}} />
           <div
             className="cardText">{(this.state.review.cardSide) ? this.state.review.deck.cardHolder[this.state.currentCard].textLanguageTwo
               : this.state.review.deck.cardHolder[this.state.currentCard].textLanguageOne}</div>

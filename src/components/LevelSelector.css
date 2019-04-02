@@ -1,0 +1,16 @@
+.theangela {
+  height: 400px;
+  text-align: center;
+  padding-top: 200px;
+  color: white;
+}
+
+.theangela + .ant-radio-group {
+  justify-content: space-around;
+  width: 100%;
+  display: flex;
+}
+
+.ant-radio-group > .ant-radio-button-wrapper {
+  font-size: 2em;
+}
