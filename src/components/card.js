@@ -8,11 +8,12 @@
  */
 
 class Card {
-  constructor(image, textLanguageOne, textLanguageTwo, audio) {
+  constructor(image, textLanguageOne, textLanguageTwo, audioL1, audioL2) {
     this.image = image;
     this.textLanguageOne = textLanguageOne;
     this.textLanguageTwo = textLanguageTwo;
-    this.audio = audio;
+    this.audioLanguageOne = audioL1;
+    this.audioLanguageTwo = audioL2;
   }
 }
 
