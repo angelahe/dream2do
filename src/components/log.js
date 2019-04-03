@@ -8,6 +8,7 @@
 class log{
   constructor(){
     if(localStorage.getItem('log') === null){localStorage.setItem('log','[]')}
+    if(localStorage.getItem('nameEmail') === null){localStorage.setItem('nameEmail','[]')}
     this.today = new Date();
   }
 
@@ -33,6 +34,26 @@ class log{
   read(){
     return JSON.parse(localStorage.getItem('log'))
   }
+
+  writeNameEmail(name,email){
+    let nameEmailList = JSON.parse(localStorage.getItem('nameEmail'));
+    const newNameEmail = {
+      name:name,
+      email:email,
+      time:`${this.today.getHours()}:${this.today.getMinutes()}`,
+    }
+
+    nameEmailList.push(newNameEmail)
+
+    localStorage.setItem(
+      'nameEmail',JSON.stringify(nameEmailList)
+    )
+  }
+
+  readNameEmail(){
+    return JSON.parse(localStorage.getItem('nameEmail'))
+  }
+
 }
 
 export default log;

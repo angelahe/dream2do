@@ -4,6 +4,7 @@ import FlashcardDeck from './components/FlashcardDeck';
 import Splash from './components/Splash'
 import { Row } from 'antd';
 import 'antd/dist/antd.css';
+import log from './components/log'
 
 class App extends React.Component {
 
@@ -14,6 +15,7 @@ class App extends React.Component {
       message: "",
       languageOne: '',
       languageTwo: '',
+      log:new log(),
     }
   }
 
@@ -25,6 +27,7 @@ class App extends React.Component {
         languageOne:e.target.parentNode.children[3].value,
         languageTwo:e.target.parentNode.children[5].value,
       });
+      this.state.log.writeNameEmail(e.target.parentNode.children[0].value,e.target.parentNode.children[1].value);
     }
   }
 
