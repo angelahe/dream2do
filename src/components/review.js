@@ -40,15 +40,6 @@ class review {
     // console.log(this.deck.cardHolder[this.cardNumber].textLanguageOne);
   }
 
-  // playAudio() {
-//   console.log('sound')
-//   // return (
-//   //   <Sound
-//   //     url={this.props.this.deck[x].audio}
-//   //   />
-//   // );
-// }
-// }
 }
 
 export default review
