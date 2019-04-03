@@ -14,10 +14,9 @@ const Splash = (props) => {
   return (
     <div className="spacing">
       <div className="title"> Welcome to Dream2do</div>
-      <div style={{width:'200px'}}> {/* ------------------------------------- Random inline css, helps to stack*/}
-        <input type="text" placeholder="name" />
-        <input type="email" placeholder="email" />
-        <h3>Language One:</h3>
+        <input className="" type="text" placeholder="name" />
+        <input className="" type="email" placeholder="email" />
+        <h3 className="subtitle">Language One:</h3>
         <select id="languageOne">
           {languageArray.map(value => {
             return(
@@ -27,7 +26,7 @@ const Splash = (props) => {
             );
           })}
         </select>
-        <h3>Language Two:</h3>
+        <h3 className="subtitle">Language Two:</h3>
         <select id="languageTwo">
           {languageArray.map(value => {
             return(
@@ -38,8 +37,6 @@ const Splash = (props) => {
           })}
         </select>
         <button onClick={props.handleClick}>Go to Flashcards</button>
-      </div>
-      
     </div>
   )
 }
