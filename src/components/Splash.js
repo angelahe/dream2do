@@ -13,7 +13,7 @@ const Splash = (props) => {
   // console.log(languageArray)
   return (
     <div className="spacing">
-      <div className="title">Welcome to Dream2do</div>
+      <div className="title"> Welcome to Dream2do</div>
       <div style={{width:'200px'}}> {/* ------------------------------------- Random inline css, helps to stack*/}
         <input type="text" placeholder="name" />
         <input type="email" placeholder="email" />
@@ -40,9 +40,6 @@ const Splash = (props) => {
         <button onClick={props.handleClick}>Go to Flashcards</button>
       </div>
       
-
-
-      {/* <input type="text" placeholder="" required /> */}
     </div>
   )
 }
