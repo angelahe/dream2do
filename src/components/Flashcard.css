@@ -37,6 +37,14 @@ main {
     left: 0px;
 }
 
+.theangela2 + #navAngela {
+  position: relative;
+  top: 68px;
+}
+
+.black {
+  color:black;
+}
 .statusBar {
   position: relative;
   top: -20px;
