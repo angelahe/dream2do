@@ -202,7 +202,7 @@
         },
         {
           "key": 429,
-          "img": "black.png",
+          "img": "/img/black.png",
           "order": 2,
           "en": {
             "word": "black",
