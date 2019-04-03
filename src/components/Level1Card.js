@@ -17,7 +17,9 @@ class Level1Card extends React.Component {
       review: new review(this.props.currentDeck),
       currentCard: 0,
       playStatus:Sound.status.STOPPED,
+      audioIcon:'sound',
     }
+    console.log(this.soundManager)
   }
 
   // set current card and card side to the initial values
@@ -34,6 +36,14 @@ class Level1Card extends React.Component {
   playAudio = () => {
     this.setState({
       playStatus:Sound.status.PLAYING,
+      audioIcon:'loading',
+    })
+  }
+
+  finishedPlaying = () => {
+    this.setState({
+      playStatus:Sound.status.STOPPED,
+      audioIcon:'sound',
     })
   }
 
@@ -62,18 +72,25 @@ class Level1Card extends React.Component {
                 null :
                 <Icon style={{ fontSize: '32px' }} onClick={() => {
                   this.state.review.handlePrevClick();
-                  this.setState({ currentCard: this.state.review.cardNumber })
+                  this.setState({ 
+                    currentCard: this.state.review.cardNumber,
+                    playStatus:Sound.status.STOPPED, 
+                  })
                 }} type="step-backward" />
             }
-            <Icon style={{ fontSize: '32px' }} onClick={() => this.playAudio()} type="sound" />
+            <Icon style={{ fontSize: '32px' }} onClick={() => this.playAudio()} type={this.state.audioIcon} />
             <Sound
               url={(this.state.review.cardSide)?this.state.review.deck.cardHolder[this.state.currentCard].audioLanguageTwo:this.state.review.deck.cardHolder[this.state.currentCard].audioLanguageOne}
               playStatus={this.state.playStatus}
+              onFinishedPlaying={this.finishedPlaying}
             />
 
             <Icon style={{ fontSize: '32px' }} onClick={() => {
               this.state.review.handleNextClick();
-              this.setState({ currentCard: this.state.review.cardNumber })
+              this.setState({ 
+                currentCard: this.state.review.cardNumber,
+                playStatus:Sound.status.STOPPED,
+              })
             }} type="step-forward" />
 
           </div>
