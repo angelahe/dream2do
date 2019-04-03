@@ -19,7 +19,7 @@ class Level1Card extends React.Component {
       playStatus:Sound.status.STOPPED,
       audioIcon:'sound',
     }
-    console.log(this.soundManager)
+    // console.log(this.soundManager)
   }
 
   // set current card and card side to the initial values
