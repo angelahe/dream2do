@@ -34,6 +34,7 @@ class FlashcardDeck extends React.Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <>
         {(this.state.deckSelected === '') ? <DeckSelector data={Decks} clicked={this.deckClicked}/> : null}

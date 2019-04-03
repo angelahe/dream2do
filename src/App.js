@@ -20,14 +20,14 @@ class App extends React.Component {
   }
 
   handleClick = (e) => {
-    // console.log(e.target.parentNode.children[5])
-    if(e.target.parentNode.children[0].value !== '' && e.target.parentNode.children[1].value !== ''){
+    console.log(e.target.parentNode.children[1])
+    if(e.target.parentNode.children[1].value !== '' && e.target.parentNode.children[2].value !== ''){
       this.setState({ 
         appClicked: false,
-        languageOne:e.target.parentNode.children[3].value,
-        languageTwo:e.target.parentNode.children[5].value,
+        languageOne:e.target.parentNode.children[4].value,
+        languageTwo:e.target.parentNode.children[6].value,
       });
-      this.state.log.writeNameEmail(e.target.parentNode.children[0].value,e.target.parentNode.children[1].value);
+      this.state.log.writeNameEmail(e.target.parentNode.children[1].value,e.target.parentNode.children[2].value);
     }
   }
 
