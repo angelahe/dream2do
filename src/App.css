@@ -44,6 +44,8 @@
   justify-content: center;
   align-items: center;
   background: #5BC8AC;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .spacing {
@@ -88,6 +90,11 @@ button:hover {
  font-family: 'Kalam';
   background: #B4E6D9;
   border-radius: 2px;
+}
 
+.gongshow {
+  height: 1000px;
+  padding-top: 500px;
+  padding-left: 100px;
 }
 

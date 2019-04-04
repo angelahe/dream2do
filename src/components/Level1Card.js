@@ -16,8 +16,8 @@ class Level1Card extends React.Component {
     this.state = {
       review: new review(this.props.currentDeck),
       currentCard: 0,
-      playStatus:Sound.status.STOPPED,
-      audioIcon:'sound',
+      playStatus: Sound.status.STOPPED,
+      audioIcon: 'sound',
     }
     // console.log(this.soundManager)
   }
@@ -35,15 +35,15 @@ class Level1Card extends React.Component {
 
   playAudio = () => {
     this.setState({
-      playStatus:Sound.status.PLAYING,
-      audioIcon:'loading',
+      playStatus: Sound.status.PLAYING,
+      audioIcon: 'loading',
     })
   }
 
   finishedPlaying = () => {
     this.setState({
-      playStatus:Sound.status.STOPPED,
-      audioIcon:'sound',
+      playStatus: Sound.status.STOPPED,
+      audioIcon: 'sound',
     })
   }
 
@@ -53,7 +53,7 @@ class Level1Card extends React.Component {
     // If the current card is after the last, show the finished screen
     if (this.state.currentCard === this.state.review.deck.cardHolder.length) {
       return (
-        <div>
+        <div className="gongshow">
           <h1>You Finished</h1>
           <button onClick={() => this.props.clearLevel()}>Go Back</button>
           <button onClick={this.continueclick}>Continue</button>
@@ -62,7 +62,7 @@ class Level1Card extends React.Component {
     } else {
       return (
         <div className="playCard">
-          <div className="cardImg" style={{backgroundImage:`url(${this.state.review.deck.cardHolder[this.state.currentCard].image})`}} />
+          <div className="cardImg" style={{ backgroundImage: `url(${this.state.review.deck.cardHolder[this.state.currentCard].image})` }} />
           <div
             className="cardText">{(this.state.review.cardSide) ? this.state.review.deck.cardHolder[this.state.currentCard].textLanguageTwo
               : this.state.review.deck.cardHolder[this.state.currentCard].textLanguageOne}</div>
@@ -72,24 +72,24 @@ class Level1Card extends React.Component {
                 null :
                 <Icon style={{ fontSize: '32px' }} onClick={() => {
                   this.state.review.handlePrevClick();
-                  this.setState({ 
+                  this.setState({
                     currentCard: this.state.review.cardNumber,
-                    playStatus:Sound.status.STOPPED, 
+                    playStatus: Sound.status.STOPPED,
                   })
                 }} type="step-backward" />
             }
             <Icon style={{ fontSize: '32px' }} onClick={() => this.playAudio()} type={this.state.audioIcon} />
             <Sound
-              url={(this.state.review.cardSide)?this.state.review.deck.cardHolder[this.state.currentCard].audioLanguageTwo:this.state.review.deck.cardHolder[this.state.currentCard].audioLanguageOne}
+              url={(this.state.review.cardSide) ? this.state.review.deck.cardHolder[this.state.currentCard].audioLanguageTwo : this.state.review.deck.cardHolder[this.state.currentCard].audioLanguageOne}
               playStatus={this.state.playStatus}
               onFinishedPlaying={this.finishedPlaying}
             />
 
             <Icon style={{ fontSize: '32px' }} onClick={() => {
               this.state.review.handleNextClick();
-              this.setState({ 
+              this.setState({
                 currentCard: this.state.review.cardNumber,
-                playStatus:Sound.status.STOPPED,
+                playStatus: Sound.status.STOPPED,
               })
             }} type="step-forward" />
 
