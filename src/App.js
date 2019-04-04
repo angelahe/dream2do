@@ -20,9 +20,9 @@ class App extends React.Component {
   }
 
   handleClick = (e) => {
-    console.log(e.target.parentNode.children[1])
+    // console.log(e.target.parentNode.children[1])
     if(e.target.parentNode.children[1].value !== '' && e.target.parentNode.children[2].value !== ''){
-      this.setState({ 
+      this.setState({
         appClicked: false,
         languageOne:e.target.parentNode.children[4].value,
         languageTwo:e.target.parentNode.children[6].value,
