@@ -34,13 +34,17 @@ class FlashcardDeck extends React.Component {
   }
 
   render() {
+    console.log(this.props)
     return (
-      <div className="flashCardDeck">
-        <StatusBar homeScreen={this.props.homeScreen} />
+      <>
         {(this.state.deckSelected === '') ? <DeckSelector data={Decks} clicked={this.deckClicked}/> : null}
-        {(this.state.deckSelected !== '') ? <LevelSelector {...this.state} langOne={this.props.languageOne} langTwo={this.props.languageTwo}/> : null}
-        <NavBar deckSelected={this.state.deckSelected} clearDeck={this.clearDeck} />
-      </div>
+        {(this.state.deckSelected !== '') ?
+          <div className="flashCardDeck">
+            <StatusBar className="statusBar" homeScreen={this.props.homeScreen} />
+            <LevelSelector {...this.state} langOne={this.props.languageOne} langTwo={this.props.languageTwo}/>
+            <NavBar className="navBar" id="navAngela" deckSelected={this.state.deckSelected} clearDeck={this.clearDeck} />
+          </div> :null }
+      </>
     );
   }
 }

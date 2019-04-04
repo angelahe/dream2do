@@ -18,10 +18,12 @@ class Level2Card extends React.Component {
     }
   }
 
+
+
   render() {
     if (this.state.recognize.deck.cardHolder.length === 0) {
       return (
-        <div>
+        <div className="gongshow">
           <h1>You Finished</h1>
           <button onClick={() => this.props.clearLevel()}>Go Back</button>
         </div>
@@ -29,7 +31,7 @@ class Level2Card extends React.Component {
     } else {
       return (
         <div className="playCard">
-          <div className="cardImg" style={{backgroundImage:`url(${this.state.recognize.deck.cardHolder[this.state.currentCard].image})`}} />
+          <div className="cardImg" style={{ backgroundImage: `url(${this.state.recognize.deck.cardHolder[this.state.currentCard].image})` }} />
           <div
             className="cardText">{(this.state.recognize.cardSide) ? this.state.recognize.deck.cardHolder[this.state.currentCard].textLanguageTwo
               : this.state.recognize.deck.cardHolder[this.state.currentCard].textLanguageOne}</div>

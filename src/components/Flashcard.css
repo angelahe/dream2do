@@ -37,6 +37,14 @@ main {
     left: 0px;
 }
 
+.theangela2 + #navAngela {
+  position: relative;
+  top: 68px;
+}
+
+.black {
+  color:black;
+}
 .statusBar {
   position: relative;
   top: -20px;
@@ -98,7 +106,7 @@ main {
 }
 
 .audioBtn, .navBtn, .cardImg  {
-  background-color: #61dafb;
+  background-color: #5BC8AC;
 }
 
 .flashCardDeck > .navBar > h2, .flashCardDeck > .statusBar > h1 {
